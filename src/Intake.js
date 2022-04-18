@@ -18,10 +18,9 @@ function Intake() {
   class FormExampleCaptureValues extends Component {
 
     state = { first_name: '', last_name: '', email: '', dob: '', intake_date: '', num_children: '', date_discharge: '', submittedFirstName: '', submittedLastName: '', submittedEmail: ''
-              , submitteddob: '', submittedIntake: '', submittedNumChildren: '', submittedDischargeDate: '', dip: '', sub_dip: '',
-              job: '', sub_job: '', job_desc: '', sub_job_desc: '', emp_add: '', sub_emp_add: '', emp_phone: '', sub_emp_phone: '', 
+              , submitteddob: '', submittedIntake: '', submittedNumChildren: '', submittedDischargeDate: '', sub_dip: '', sub_job: '', job_desc: '', sub_job_desc: '', emp_add: '', sub_emp_add: '', emp_phone: '', sub_emp_phone: '', 
               years_worked: '', mon_worked: '', sub_years_worked: '', sub_mon_worked: '', hour_wage: '', bi_wage: '', mon_wage: '', sub_hour_wage: '', sub_bi_wage: '', 
-              sub_mon_wage: '', tr: '', sub_tr: '', tr_pro: '', tr_loc: '', sub_tr_pro: '', sub_tr_loc: '', sk: '', sub_sk: '', skills: '', sub_skills: '', 
+              sub_mon_wage: '', sub_tr: '', tr_pro: '', tr_loc: '', sub_tr_pro: '', sub_tr_loc: '', sub_sk: '', skills: '', sub_skills: '', 
               action_item_a1: '', sub_action_item_a1: '', proj_date_a1: '', sub_proj_date_a1: '', act_date_a1: '', sub_act_date_a1: '',
               action_item_b1: '', sub_action_item_b1: '', proj_date_b1: '', sub_proj_date_b1: '', act_date_b1: '', sub_act_date_b1: '',
               action_item_c1: '', sub_action_item_c1: '', proj_date_a1: '', sub_proj_date_c1: '', act_date_c1: '', sub_act_date_c1: '', 
@@ -97,17 +96,19 @@ function Intake() {
   const errorLabel = <label color="red" pointing/>
   
       return (
-        <div>
+        <div class="form-cont">
           <h1>New Resident Intake Form</h1>
           <h2>Individual Service Plan</h2>
           <Form onSubmit={this.handleSubmit}>
-          <Form.Group>
+          <Form.Group className="group-1">
+          <label>First Name</label>
               <Form.Input
                 placeholder='First Name'
                 name='first_name'
                 value={first_name}
                 onChange={this.handleChange}
               />
+              <label>Last Name</label>
               <Form.Input
                 placeholder='Last Name'
                 name='last_name'
@@ -122,6 +123,8 @@ function Intake() {
                 type="date"
                 onChange={this.handleChange}
               />
+              </Form.Group>
+              <Form.Group className="group-1">
               <label>Date of Intake</label>
               <Form.Input
                 placeholder='Date of Intake'
@@ -130,6 +133,7 @@ function Intake() {
                 type="date"
                 onChange={this.handleChange}
               />
+              <label>Number of Children</label>
               <Form.Input
                 placeholder='Number of Children'
                 name='num_children'
@@ -153,31 +157,31 @@ function Intake() {
                 <Form.Radio
                   label='Yes'
                   name='dip'
-                  value='dip_yes'
-                  checked={this.state.dip == 'dip_yes'}
+                  value={true}
+                  checked={this.state.dip == true}
                   onChange={this.handleChange}
                 />
                 <Form.Radio
                   label='No'
                   name='dip'
-                  value='dip_no'
-                  checked={this.state.dip == 'dip_no'}
+                  value={false}
+                  checked={this.state.dip == false}
                   onChange={this.handleChange}
                 />
               <p></p>
                 <label><b>2) Do you have a job?</b></label>
                 <Form.Radio
-                  label='Yes'
                   name='job'
-                  value='job_yes'
-                  checked={this.state.job == 'job_yes'}
+                  label='Yes'
+                  value={true}
+                  checked={this.state.job == true}
                   onChange={this.handleChange}
                 />
                 <Form.Radio
-                  label='No'
                   name='job'
-                  value='job_no'
-                  checked={this.state.job == 'job_no'}
+                  label='No'
+                  value={false}
+                  checked={this.state.job == false}
                   onChange={this.handleChange}
                 />
               <p></p>
@@ -200,7 +204,8 @@ function Intake() {
                 value={emp_phone}
                 onChange={this.handleChange}
               />
-              <Form.Group>
+              <Form.Group className="group-1">
+              <label>Number of years worked there</label>
             <Form.Input
                 placeholder='# years worked there'
                 name='years_worked'
@@ -208,8 +213,10 @@ function Intake() {
                 onChange={this.handleChange}
                 validations="isNumeric"
                 validationErrors={{ isNumeric: 'Must be a number' }}
+                errorLabel={ errorLabel }
                 
               />
+              <label>Number of months worked there</label>
               <Form.Input
                 placeholder='# months worked there'
                 name='mon_worked'
@@ -219,6 +226,7 @@ function Intake() {
                 validationErrors={{ isNumeric: 'Must be a number' }}
                 errorLabel={ errorLabel }
               />
+              <label>Hourly wage</label>
             <Form.Input
                 placeholder='Hourly wage'
                 name='hour_wage'
@@ -228,6 +236,9 @@ function Intake() {
                 validationErrors={{ isNumeric: 'Must be a number' }}
                 errorLabel={ errorLabel }
               />
+              </Form.Group>
+              <Form.Group className="group-1">
+              <label>Bi-weekly wage</label>
             <Form.Input
                 placeholder='Bi-weekly wage'
                 name='bi_wage'
@@ -237,6 +248,7 @@ function Intake() {
                 validationErrors={{ isNumeric: 'Must be a number' }}
                 errorLabel={ errorLabel }
               />
+              <label>Monthly wage</label>
               <Form.Input
                 placeholder='Monthly wage'
                 name='mon_wage'
@@ -247,20 +259,19 @@ function Intake() {
                 errorLabel={ errorLabel }
               />
               </Form.Group>
-
               <label><b>3) If you don't have a job, are you enrolled in a training proram?</b></label>
                 <Form.Radio
-                  label='Yes'
                   name='tr'
-                  value='tr_yes'
-                  checked={this.state.tr == 'tr_yes'}
+                  label='Yes'
+                  value={true}
+                  checked={this.state.tr == true}
                   onChange={this.handleChange}
                 />
                 <Form.Radio
-                  label='No'
                   name='tr'
-                  value='tr_no'
-                  checked={this.state.tr == 'tr_no'}
+                  label='No'
+                  value={false}
+                  checked={this.state.tr == false}
                   onChange={this.handleChange}
                 />
               <p></p>
@@ -280,17 +291,18 @@ function Intake() {
            <p></p>
               <label><b>4) Do you have any job skills?</b></label>
                 <Form.Radio
-                  label='Yes'
                   name='sk'
-                  value='sk_yes'
-                  checked={this.state.sk == 'sk_yes'}
+                  label='Yes'
+                  value={true}
+                  checked={this.state.sk == true}
                   onChange={this.handleChange}
                 />
                 <Form.Radio
+                  name='sk'
                   label='No'
                   name='sk'
-                  value='sk_no'
-                  checked={this.state.sk == 'sk_no'}
+                  value={false}
+                  checked={this.state.sk == false}
                   onChange={this.handleChange}
                 />
               <p></p>

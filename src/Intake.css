@@ -4,3 +4,16 @@
     padding: 20px;
     font-size: 30px;
   }
+
+.form-cont {
+  display: flex;
+  margin: 20px;
+  padding: 10px;
+  flex-direction: column;
+}
+
+.group-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
