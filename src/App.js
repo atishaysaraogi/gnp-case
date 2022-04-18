@@ -4,8 +4,7 @@ import { useState, useEffect, Component } from "react";
 import Intake from './Intake.js';
 import Metrics from './Metrics.js';
 import { Routes, Route, Link } from "react-router-dom";
-
-
+import Display from './Display.js';
 
 function App() {
 
