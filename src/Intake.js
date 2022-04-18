@@ -12,8 +12,9 @@ import {
   TextArea
 } from 'formsy-semantic-ui-react'
 
-function Intake() {
 
+function Intake() {
+  
   class FormExampleCaptureValues extends Component {
 
     state = { first_name: '', last_name: '', email: '', dob: '', intake_date: '', num_children: '', date_discharge: '', submittedFirstName: '', submittedLastName: '', submittedEmail: ''
