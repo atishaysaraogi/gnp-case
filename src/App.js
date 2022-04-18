@@ -8,7 +8,8 @@ function App() {
 
   return (
     <div>
-      <Intake />
+      {/* <Intake /> */}
+      <Metrics />
     </div>
     
   );
