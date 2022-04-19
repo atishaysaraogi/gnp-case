@@ -64,7 +64,6 @@ function Display() {
 
 
 
-
       <button>Related people</button>
 
     </div>
