@@ -13,7 +13,7 @@ import {
   TextArea
 } from 'formsy-semantic-ui-react'
 
-function Intake() {
+function IndServicePlan() {
 
   class FormExampleCaptureValues extends Component {
 
@@ -23,31 +23,25 @@ function Intake() {
               sub_mon_wage: '', sub_tr: '', tr_pro: '', tr_loc: '', sub_tr_pro: '', sub_tr_loc: '', sub_sk: '', skills: '', sub_skills: '', 
               action_item_a1: '', sub_action_item_a1: '', proj_date_a1: '', sub_proj_date_a1: '', act_date_a1: '', sub_act_date_a1: '',
               action_item_b1: '', sub_action_item_b1: '', proj_date_b1: '', sub_proj_date_b1: '', act_date_b1: '', sub_act_date_b1: '',
-              action_item_c1: '', sub_action_item_c1: '', proj_date_a1: '', sub_proj_date_c1: '', act_date_c1: '', sub_act_date_c1: '', 
               action_item_a2: '', sub_action_item_a2: '', proj_date_a2: '', sub_proj_date_a2: '', act_date_a2: '', sub_act_date_a2: '',
               action_item_b2: '', sub_action_item_b2: '', proj_date_b2: '', sub_proj_date_b2: '', act_date_b2: '', sub_act_date_b2: '',
-              action_item_c2: '', sub_action_item_c2: '', proj_date_a2: '', sub_proj_date_c2: '', act_date_c2: '', sub_act_date_c2: '',
               action_item_a3: '', sub_action_item_a3: '', proj_date_a3: '', sub_proj_date_a3: '', act_date_a3: '', sub_act_date_a3: '',
               action_item_b3: '', sub_action_item_b3: '', proj_date_b3: '', sub_proj_date_b3: '', act_date_b3: '', sub_act_date_b3: '',
-              action_item_c3: '', sub_action_item_c3: '', proj_date_a3: '', sub_proj_date_c3: '', act_date_c3: '', sub_act_date_c3: '',
               action_item_a4: '', sub_action_item_a4: '', proj_date_a4: '', sub_proj_date_a4: '', act_date_a4: '', sub_act_date_a4: '',
               action_item_b4: '', sub_action_item_b4: '', proj_date_b4: '', sub_proj_date_b4: '', act_date_b4: '', sub_act_date_b4: '',
-              action_item_c4: '', sub_action_item_c4: '', proj_date_a4: '', sub_proj_date_c4: '', act_date_c4: '', sub_act_date_c4: '',
               action_item_a5: '', sub_action_item_a5: '', proj_date_a5: '', sub_proj_date_a5: '', act_date_a5: '', sub_act_date_a5: '',
-              action_item_b5: '', sub_action_item_b5: '', proj_date_b5: '', sub_proj_date_b5: '', act_date_b5: '', sub_act_date_b5: '',
-              action_item_c5: '', sub_action_item_c5: '', proj_date_a5: '', sub_proj_date_c5: '', act_date_c5: '', sub_act_date_c5: '',
-              act_30: '', act_60: '', act_90: '', act_120: '', sub_act_30: '', sub_act_60: '', sub_act_90: '', sub_act_120: ''}
-  
+              action_item_b5: '', sub_action_item_b5: '', proj_date_b5: '', sub_proj_date_b5: '', act_date_b5: '', sub_act_date_b5: '', ssn: '', subssn: ''
+  }
+
     handleChange = (e, { name, value }) => this.setState({ [name]: value })
   
     handleSubmit = () => {
       const { first_name, last_name, email, dob, intake_date, num_children, date_discharge, dip, job, job_desc, emp_add, emp_phone, years_worked, mon_worked, hour_wage, bi_wage, mon_wage, tr, tr_pro, tr_loc, sk, skills,
-              action_item_a1, proj_date_a1, act_date_a1, action_item_b1, proj_date_b1, act_date_b1, action_item_c1, proj_date_c1, act_date_c1,
-              action_item_a2, proj_date_a2, act_date_a2, action_item_b2, proj_date_b2, act_date_b2, action_item_c2, proj_date_c2, act_date_c2,
-              action_item_a3, proj_date_a3, act_date_a3, action_item_b3, proj_date_b3, act_date_b3, action_item_c3, proj_date_c3, act_date_c3,
-              action_item_a4, proj_date_a4, act_date_a4, action_item_b4, proj_date_b4, act_date_b4, action_item_c4, proj_date_c4, act_date_c4,
-              action_item_a5, proj_date_a5, act_date_a5, action_item_b5, proj_date_b5, act_date_b5, action_item_c5, proj_date_c5, act_date_c5,
-              act_30, act_60, act_90, act_120
+              action_item_a1, proj_date_a1, act_date_a1, action_item_b1, proj_date_b1, act_date_b1,
+              action_item_a2, proj_date_a2, act_date_a2, action_item_b2, proj_date_b2, act_date_b2,
+              action_item_a3, proj_date_a3, act_date_a3, action_item_b3, proj_date_b3, act_date_b3,
+              action_item_a4, proj_date_a4, act_date_a4, action_item_b4, proj_date_b4, act_date_b4,
+              action_item_a5, proj_date_a5, act_date_a5, action_item_b5, proj_date_b5, act_date_b5, ssn
 
 } = this.state
   
@@ -55,21 +49,14 @@ function Intake() {
                       sub_emp_add: emp_add, sub_emp_phone: emp_phone, sub_years_worked: years_worked, sub_mon_worked: mon_worked, sub_hour_wage: hour_wage, sub_bi_wage: bi_wage, sub_mon_wage: mon_wage, sub_tr: tr, sub_tr_pro: tr_pro, sub_tr_loc: tr_loc, sub_sk: sk, sub_skills: skills, 
                       sub_action_item_a1: action_item_a1, sub_proj_date_a1: proj_date_a1, sub_act_date_a1: act_date_a1, 
                       sub_action_item_b1: action_item_b1, sub_proj_date_b1: proj_date_b1, sub_act_date_b1: act_date_b1,
-                      sub_action_item_c1: action_item_c1, sub_proj_date_c1: proj_date_c1, sub_act_date_c1: act_date_c1,
                       sub_action_item_a2: action_item_a2, sub_proj_date_a2: proj_date_a2, sub_act_date_a2: act_date_a2,
                       sub_action_item_b2: action_item_b2, sub_proj_date_b2: proj_date_b2, sub_act_date_b2: act_date_b2,
-                      sub_action_item_c2: action_item_c2, sub_proj_date_c2: proj_date_c2, sub_act_date_c2: act_date_c2,
                       sub_action_item_a3: action_item_a3, sub_proj_date_a3: proj_date_a3, sub_act_date_a3: act_date_a3,
                       sub_action_item_b3: action_item_b3, sub_proj_date_b3: proj_date_b3, sub_act_date_b3: act_date_b3,
-                      sub_action_item_c3: action_item_c3, sub_proj_date_c3: proj_date_c3, sub_act_date_c3: act_date_c3,
                       sub_action_item_a4: action_item_a4, sub_proj_date_a4: proj_date_a4, sub_act_date_a4: act_date_a4,
                       sub_action_item_b4: action_item_b4, sub_proj_date_b4: proj_date_b4, sub_act_date_b4: act_date_b4,
-                      sub_action_item_c4: action_item_c4, sub_proj_date_c4: proj_date_c4, sub_act_date_c4: act_date_c4,
                       sub_action_item_a5: action_item_a5, sub_proj_date_a5: proj_date_a5, sub_act_date_a5: act_date_a5,
-                      sub_action_item_b5: action_item_b5, sub_proj_date_b5: proj_date_b5, sub_act_date_b5: act_date_b5,
-                      sub_action_item_c5: action_item_c5, sub_proj_date_c5: proj_date_c5, sub_act_date_c5: act_date_c5,
-                      sub_act_30: act_30, sub_act_60: act_60, sub_act_90: act_90, sub_act_120: act_120
-})
+                      sub_action_item_b5: action_item_b5, sub_proj_date_b5: proj_date_b5, sub_act_date_b5: act_date_b5, subssn: ssn})
     }
   
     render() {
@@ -77,21 +64,14 @@ function Intake() {
       , hour_wage, sub_hour_wage, bi_wage, sub_bi_wage, mon_wage, sub_mon_wage, tr, sub_tr, tr_pro, tr_loc, sub_tr_pro, sub_tr_loc, sk, sub_sk, skills, sub_skills, 
       action_item_a1, sub_action_item_a1, proj_date_a1, sub_proj_date_a1, act_date_a1, sub_act_date_a1,
       action_item_b1, sub_action_item_b1, proj_date_b1, sub_proj_date_b1, act_date_b1, sub_act_date_b1,
-      action_item_c1, sub_action_item_c1, proj_date_c1, sub_proj_date_c1, act_date_c1, sub_act_date_c1,
       action_item_a2, sub_action_item_a2, proj_date_a2, sub_proj_date_a2, act_date_a2, sub_act_date_a2,
       action_item_b2, sub_action_item_b2, proj_date_b2, sub_proj_date_b2, act_date_b2, sub_act_date_b2,
-      action_item_c2, sub_action_item_c2, proj_date_c2, sub_proj_date_c2, act_date_c2, sub_act_date_c2,
       action_item_a3, sub_action_item_a3, proj_date_a3, sub_proj_date_a3, act_date_a3, sub_act_date_a3,
       action_item_b3, sub_action_item_b3, proj_date_b3, sub_proj_date_b3, act_date_b3, sub_act_date_b3,
-      action_item_c3, sub_action_item_c3, proj_date_c3, sub_proj_date_c3, act_date_c3, sub_act_date_c3,
       action_item_a4, sub_action_item_a4, proj_date_a4, sub_proj_date_a4, act_date_a4, sub_act_date_a4,
       action_item_b4, sub_action_item_b4, proj_date_b4, sub_proj_date_b4, act_date_b4, sub_act_date_b4,
-      action_item_c4, sub_action_item_c4, proj_date_c4, sub_proj_date_c4, act_date_c4, sub_act_date_c4,
       action_item_a5, sub_action_item_a5, proj_date_a5, sub_proj_date_a5, act_date_a5, sub_act_date_a5,
-      action_item_b5, sub_action_item_b5, proj_date_b5, sub_proj_date_b5, act_date_b5, sub_act_date_b5,
-      action_item_c5, sub_action_item_c5, proj_date_c5, sub_proj_date_c5, act_date_c5, sub_act_date_c5,
-      act_30, sub_act_30, act_60, sub_act_60, act_90, sub_act_90, act_120, sub_act_120
-  } = this.state
+      action_item_b5, sub_action_item_b5, proj_date_b5, sub_proj_date_b5, act_date_b5, sub_act_date_b5, ssn, subssn  } = this.state
   
   const errorLabel = <label color="red" pointing/>
   
@@ -114,6 +94,16 @@ function Intake() {
                 name='last_name'
                 value={last_name}
                 onChange={this.handleChange}
+              />
+              <label>Last 4 Digits of SSN</label>
+              <Form.Input
+                placeholder='Last 4 of SSN'
+                name='ssn'
+                value={ssn}
+                onChange={this.handleChange}
+                validations="isNumeric"
+                validationErrors={{ isNumeric: 'Must be a number' }}
+                errorLabel={ <label color="red" pointing/> }
               />
               <label>Date of Birth</label>
               <Form.Input
@@ -152,169 +142,6 @@ function Intake() {
                 onChange={this.handleChange}
               />
               </Form.Group>
-              <h2>Assessment at Intake</h2>
-                <label><b>1) Do you have a high school diploma or GED?</b></label>
-                <Form.Radio
-                  label='Yes'
-                  name='dip'
-                  value={true}
-                  checked={this.state.dip == true}
-                  onChange={this.handleChange}
-                />
-                <Form.Radio
-                  label='No'
-                  name='dip'
-                  value={false}
-                  checked={this.state.dip == false}
-                  onChange={this.handleChange}
-                />
-              <p></p>
-                <label><b>2) Do you have a job?</b></label>
-                <Form.Radio
-                  name='job'
-                  label='Yes'
-                  value={true}
-                  checked={this.state.job == true}
-                  onChange={this.handleChange}
-                />
-                <Form.Radio
-                  name='job'
-                  label='No'
-                  value={false}
-                  checked={this.state.job == false}
-                  onChange={this.handleChange}
-                />
-              <p></p>
-              <label>If you do have a job:</label>
-              <Form.Input
-                placeholder='Job Description'
-                name='job_desc'
-                value={job_desc}
-                onChange={this.handleChange}
-              />
-            <Form.Input
-                placeholder='Employee Address'
-                name='emp_add'
-                value={emp_add}
-                onChange={this.handleChange}
-              />
-            <Form.Input
-                placeholder='Employee Phone #'
-                name='emp_phone'
-                value={emp_phone}
-                onChange={this.handleChange}
-              />
-              <Form.Group className="group-1">
-              <label>Number of years worked there</label>
-            <Form.Input
-                placeholder='# years worked there'
-                name='years_worked'
-                value={years_worked}
-                onChange={this.handleChange}
-                validations="isNumeric"
-                validationErrors={{ isNumeric: 'Must be a number' }}
-                errorLabel={ errorLabel }
-                
-              />
-              <label>Number of months worked there</label>
-              <Form.Input
-                placeholder='# months worked there'
-                name='mon_worked'
-                value={mon_worked}
-                onChange={this.handleChange}
-                validations="isNumeric"
-                validationErrors={{ isNumeric: 'Must be a number' }}
-                errorLabel={ errorLabel }
-              />
-              <label>Hourly wage</label>
-            <Form.Input
-                placeholder='Hourly wage'
-                name='hour_wage'
-                value={hour_wage}
-                onChange={this.handleChange}
-                validations="isNumeric"
-                validationErrors={{ isNumeric: 'Must be a number' }}
-                errorLabel={ errorLabel }
-              />
-              </Form.Group>
-              <Form.Group className="group-1">
-              <label>Bi-weekly wage</label>
-            <Form.Input
-                placeholder='Bi-weekly wage'
-                name='bi_wage'
-                value={bi_wage}
-                onChange={this.handleChange}
-                validations="isNumeric"
-                validationErrors={{ isNumeric: 'Must be a number' }}
-                errorLabel={ errorLabel }
-              />
-              <label>Monthly wage</label>
-              <Form.Input
-                placeholder='Monthly wage'
-                name='mon_wage'
-                value={mon_wage}
-                onChange={this.handleChange}
-                validations="isNumeric"
-                validationErrors={{ isNumeric: 'Must be a number' }}
-                errorLabel={ errorLabel }
-              />
-              </Form.Group>
-              <label><b>3) If you don't have a job, are you enrolled in a training proram?</b></label>
-                <Form.Radio
-                  name='tr'
-                  label='Yes'
-                  value={true}
-                  checked={this.state.tr == true}
-                  onChange={this.handleChange}
-                />
-                <Form.Radio
-                  name='tr'
-                  label='No'
-                  value={false}
-                  checked={this.state.tr == false}
-                  onChange={this.handleChange}
-                />
-              <p></p>
-              <label>If you are enrolled in job training:</label>
-              <Form.Input
-                placeholder='Training Program'
-                name='tr_pro'
-                value={tr_pro}
-                onChange={this.handleChange}
-              />
-            <Form.Input
-                placeholder='Location'
-                name='tr_loc'
-                value={tr_loc}
-                onChange={this.handleChange}
-              />
-           <p></p>
-              <label><b>4) Do you have any job skills?</b></label>
-                <Form.Radio
-                  name='sk'
-                  label='Yes'
-                  value={true}
-                  checked={this.state.sk == true}
-                  onChange={this.handleChange}
-                />
-                <Form.Radio
-                  name='sk'
-                  label='No'
-                  name='sk'
-                  value={false}
-                  checked={this.state.sk == false}
-                  onChange={this.handleChange}
-                />
-              <p></p>
-              <label>If so, what are your job skills?</label>
-              <Form.Field
-              control={TextArea}
-              placeholder='Job skills'
-              name='skills'
-              value={skills}
-              onChange={this.handleChange}
-              />
-          <p></p>
           <h2>Statement of Identified Goals for Self-Sufficiency</h2>
           <h3>Training</h3>
           <label>Action Item A</label>
@@ -359,28 +186,6 @@ function Intake() {
               placeholder='Actual Date of Completion'
               name='act_date_b1'
               value={act_date_b1}
-              onChange={this.handleChange}
-              />
-              <label>Action Item C</label>
-              <Form.Field
-              control={TextArea}
-              placeholder='Action Item'
-              name='action_item_c1'
-              value={action_item_c1}
-              onChange={this.handleChange}
-              />
-              <Form.Field
-              control={TextArea}
-              placeholder='Projected Date of Completion'
-              name='proj_date_c1'
-              value={proj_date_c1}
-              onChange={this.handleChange}
-              />
-              <Form.Field
-              control={TextArea}
-              placeholder='Actual Date of Completion'
-              name='act_date_c1'
-              value={act_date_c1}
               onChange={this.handleChange}
               />
 
@@ -431,28 +236,6 @@ function Intake() {
               value={act_date_b2}
               onChange={this.handleChange}
               />
-              <label>Action Item C</label>
-              <Form.Field
-              control={TextArea}
-              placeholder='Action Item'
-              name='action_item_c2'
-              value={action_item_c2}
-              onChange={this.handleChange}
-              />
-              <Form.Field
-              control={TextArea}
-              placeholder='Projected Date of Completion'
-              name='proj_date_c2'
-              value={proj_date_c2}
-              onChange={this.handleChange}
-              />
-              <Form.Field
-              control={TextArea}
-              placeholder='Actual Date of Completion'
-              name='act_date_c2'
-              value={act_date_c2}
-              onChange={this.handleChange}
-              />
 
           <h3>Employment</h3>
            
@@ -498,28 +281,6 @@ function Intake() {
               placeholder='Actual Date of Completion'
               name='act_date_b3'
               value={act_date_b3}
-              onChange={this.handleChange}
-              />
-              <label>Action Item C</label>
-              <Form.Field
-              control={TextArea}
-              placeholder='Action Item'
-              name='action_item_c3'
-              value={action_item_c3}
-              onChange={this.handleChange}
-              />
-              <Form.Field
-              control={TextArea}
-              placeholder='Projected Date of Completion'
-              name='proj_date_c3'
-              value={proj_date_c3}
-              onChange={this.handleChange}
-              />
-              <Form.Field
-              control={TextArea}
-              placeholder='Actual Date of Completion'
-              name='act_date_c3'
-              value={act_date_c3}
               onChange={this.handleChange}
               />
 
@@ -569,28 +330,6 @@ function Intake() {
               value={act_date_b4}
               onChange={this.handleChange}
               />
-              <label>Action Item C</label>
-              <Form.Field
-              control={TextArea}
-              placeholder='Action Item'
-              name='action_item_c4'
-              value={action_item_c4}
-              onChange={this.handleChange}
-              />
-              <Form.Field
-              control={TextArea}
-              placeholder='Projected Date of Completion'
-              name='proj_date_c4'
-              value={proj_date_c4}
-              onChange={this.handleChange}
-              />
-              <Form.Field
-              control={TextArea}
-              placeholder='Actual Date of Completion'
-              name='act_date_c4'
-              value={act_date_c4}
-              onChange={this.handleChange}
-              />
 
           <h3>Other</h3>
           
@@ -638,85 +377,26 @@ function Intake() {
               value={act_date_b5}
               onChange={this.handleChange}
               />
-              <label>Action Item C</label>
-              <Form.Field
-              control={TextArea}
-              placeholder='Action Item'
-              name='action_item_c5'
-              value={action_item_c5}
-              onChange={this.handleChange}
-              />
-              <Form.Field
-              control={TextArea}
-              placeholder='Projected Date of Completion'
-              name='proj_date_c5'
-              value={proj_date_c5}
-              onChange={this.handleChange}
-              />
-              <Form.Field
-              control={TextArea}
-              placeholder='Actual Date of Completion'
-              name='act_date_c5'
-              value={act_date_c5}
-              onChange={this.handleChange}
-              />
+              </Form>
 
-          <h2>Housing Plan</h2>
-          <h3>Phase 1: 30-Day Progress</h3>
-          <Form.Field
-              control={TextArea}
-              placeholder='Action Items'
-              name='act_30'
-              value={act_30}
-              onChange={this.handleChange}
-              />
-          <h3>Phase 1: 60-Day Progress</h3>
-          <Form.Field
-              control={TextArea}
-              placeholder='Action Items'
-              name='act_60'
-              value={act_60}
-              onChange={this.handleChange}
-              />
-          <h3>Phase 1: 90-Day Progress</h3>
-          <Form.Field
-              control={TextArea}
-              placeholder='Action Items'
-              name='act_90'
-              value={act_90}
-              onChange={this.handleChange}
-              />
-          <h3>Phase 1: 120-Day Progress</h3>
-          <Form.Field
-              control={TextArea}
-              placeholder='Action Items'
-              name='act_120'
-              value={act_120}
-              onChange={this.handleChange}
-              />
-          <p></p>
-          <Form.Button content='Submit' />
-          </Form>
           <p></p>
           <p></p>
           <strong>onChange:</strong>
           <pre>{JSON.stringify({ first_name, last_name, dob, intake_date, num_children, date_discharge, dip, job, job_desc, emp_add, emp_phone, years_worked, mon_worked, hour_wage, bi_wage, mon_wage, tr, tr_pro, tr_loc, sk, skills,
-            action_item_a1, proj_date_a1, act_date_a1, action_item_b1, proj_date_b1, act_date_b1, action_item_c1, proj_date_c1, act_date_c1,
-            action_item_a2, proj_date_a2, act_date_a2, action_item_b2, proj_date_b2, act_date_b2, action_item_c2, proj_date_c2, act_date_c2,
-            action_item_a3, proj_date_a3, act_date_a3, action_item_b3, proj_date_b3, act_date_b3, action_item_c3, proj_date_c3, act_date_c3,
-            action_item_a4, proj_date_a4, act_date_a4, action_item_b4, proj_date_b4, act_date_b4, action_item_c4, proj_date_c4, act_date_c4,
-            action_item_a5, proj_date_a5, act_date_a5, action_item_b5, proj_date_b5, act_date_b5, action_item_c5, proj_date_c5, act_date_c5,
-            act_30, act_60, act_90, act_120
+            action_item_a1, proj_date_a1, act_date_a1, action_item_b1, proj_date_b1, act_date_b1, 
+            action_item_a2, proj_date_a2, act_date_a2, action_item_b2, proj_date_b2, act_date_b2, 
+            action_item_a3, proj_date_a3, act_date_a3, action_item_b3, proj_date_b3, act_date_b3, 
+            action_item_a4, proj_date_a4, act_date_a4, action_item_b4, proj_date_b4, act_date_b4,
+            action_item_a5, proj_date_a5, act_date_a5, action_item_b5, proj_date_b5, act_date_b5, ssn
  }, null, 2)}</pre>
           <strong>onSubmit:</strong>
           <pre>{JSON.stringify({ submittedFirstName, submittedLastName, submitteddob, submittedIntake, submittedNumChildren, submittedDischargeDate, sub_dip, sub_job, sub_job_desc, sub_emp_add, sub_emp_phone, sub_years_worked, sub_mon_worked, sub_hour_wage, sub_bi_wage, sub_mon_wage, 
                                   sub_tr, sub_tr_pro, sub_tr_loc, sub_sk, sub_skills, 
-                                  sub_action_item_a1, sub_proj_date_a1, sub_act_date_a1, sub_action_item_b1, sub_proj_date_b1, sub_act_date_b1, sub_action_item_c1, sub_proj_date_c1, sub_act_date_c1,
-                                  sub_action_item_a2, sub_proj_date_a2, sub_act_date_a2, sub_action_item_b2, sub_proj_date_b2, sub_act_date_b2, sub_action_item_c2, sub_proj_date_c2, sub_act_date_c2,
-                                  sub_action_item_a3, sub_proj_date_a3, sub_act_date_a3, sub_action_item_b3, sub_proj_date_b3, sub_act_date_b3, sub_action_item_c3, sub_proj_date_c3, sub_act_date_c3, 
-                                  sub_action_item_a4, sub_proj_date_a4, sub_act_date_a4, sub_action_item_b4, sub_proj_date_b4, sub_act_date_b4, sub_action_item_c4, sub_proj_date_c4, sub_act_date_c4,
-                                  sub_action_item_a5, sub_proj_date_a5, sub_act_date_a5, sub_action_item_b5, sub_proj_date_b5, sub_act_date_b5, sub_action_item_c5, sub_proj_date_c5, sub_act_date_c5,
-                                  sub_act_30, sub_act_60, sub_act_90, sub_act_120
+                                  sub_action_item_a1, sub_proj_date_a1, sub_act_date_a1, sub_action_item_b1, sub_proj_date_b1, sub_act_date_b1,
+                                  sub_action_item_a2, sub_proj_date_a2, sub_act_date_a2, sub_action_item_b2, sub_proj_date_b2, sub_act_date_b2,
+                                  sub_action_item_a3, sub_proj_date_a3, sub_act_date_a3, sub_action_item_b3, sub_proj_date_b3, sub_act_date_b3,
+                                  sub_action_item_a4, sub_proj_date_a4, sub_act_date_a4, sub_action_item_b4, sub_proj_date_b4, sub_act_date_b4,
+                                  sub_action_item_a5, sub_proj_date_a5, sub_act_date_a5, sub_action_item_b5, sub_proj_date_b5, sub_act_date_b5, subssn
  }, null, 2)}</pre>
         </div>
       )
@@ -730,4 +410,4 @@ function Intake() {
   );
 }
 
-export default Intake;
+export default IndServicePlan;

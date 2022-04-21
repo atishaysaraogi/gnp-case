@@ -17,41 +17,59 @@ function ReferralList() {
 
   class FormExampleCaptureValues extends Component {
 
-    state = { name0: '', date0: '', entry: '', discharge: '', subname1: '', subdate1: '', subentry: '', subdischarge: '',
+    state = { date0: '', entry: '', discharge: '', subname1: '', subdate1: '', subentry: '', subdischarge: '',
              date1: '', subdate1: '', date2: '', subdate2: '', date3: '', subdate3: '', date4: '', subdate4: '', date5: '', subdate5: '',
              date6: '', subdate6: '', date7: '', subdate7: '', date8: '', subdate8: '', date9: '', subdate9: '', date10: '', subdate10: '', 
             ref1: '', subref1: '', ref2: '', subref2: '', ref3: '', subref3: '', ref4: '', subref4: '', ref5: '', subref5: '', 
-            ref6: '', subref6: '', ref7: '', subref7: '', ref8: '', subref8: '', ref9: '', subref9: '', ref10: '', subref10: ''}
+            ref6: '', subref6: '', ref7: '', subref7: '', ref8: '', subref8: '', ref9: '', subref9: '', ref10: '', subref10: '', first_name: '', sub_first_name: '', last_name: '', sub_late_name: '', ssn: '', sub_ssn: ''}
   
     handleChange = (e, { name, value }) => this.setState({ [name]: value })
   
     handleSubmit = () => {
-      const { name0, date0, entry, discharge, date1, date2, date3, date4, date5, date6, date7, date8, date9, date10, ref1, ref2, ref3, ref4, ref5, ref6, ref7, ref8, ref9, ref10 } = this.state
+      const { date0, entry, discharge, date1, date2, date3, date4, date5, date6, date7, date8, date9, date10, ref1, ref2, ref3, ref4, ref5, ref6, ref7, ref8, ref9, ref10, first_name, last_name, ssn } = this.state
   
-      this.setState({ subname0: name0, subdate0: date0, subentry: entry, subdischarge: discharge, subdate1: date1, subdate2: date2, subdate3: date3,
+      this.setState({ subdate0: date0, subentry: entry, subdischarge: discharge, subdate1: date1, subdate2: date2, subdate3: date3,
                         subdate4: date4, subdate5: date5, subdate6: date6, subdate7: date7, subdate8: date8, subdate9: date9, subdate10: date10,
                         subref1: ref1, subref2: ref2, subref3: ref3, subref4: ref4, subref5: ref5, subref6: ref6, subref7: ref7, subref8: ref8,
-                        subref9: ref9, subref10: ref10 })}
+                        subref9: ref9, subref10: ref10, sub_first_name: first_name, sub_last_name: last_name, sub_ssn: ssn })}
   
     render() {
-      const { name0, subname0, date0, subdate0, entry, subentry, discharge, subdischarge, date1, subdate1, date2, subdate2, 
+      const { date0, subdate0, entry, subentry, discharge, subdischarge, date1, subdate1, date2, subdate2, 
             date3, subdate3, date4, subdate4, date5, subdate5, date6, subdate6, date7, subdate7, date8, subdate8, date9, subdate9, date10, subdate10,
-            ref1, subref1, ref2, subref2, ref3, subref3, ref4, subref4, ref5, subref5, ref6, subref6, ref7, subref7, ref8, subref8, ref9, subref9, ref10, subref10 } = this.state
+            ref1, subref1, ref2, subref2, ref3, subref3, ref4, subref4, ref5, subref5, ref6, subref6, ref7, subref7, ref8, subref8, ref9, subref9, ref10, subref10, first_name, last_name, ssn, sub_first_name, sub_last_name, sub_ssn } = this.state
   
   const errorLabel = <label color="red" pointing/>
   
       return (
-        <div>
+        <div class="form-cont">
           <h1>Referral List</h1>
           <Form onSubmit={this.handleSubmit}>
-          <h3>Resident Name</h3>
-          <Form.Field
-              control={TextArea}
-              placeholder='Name'
-              name='name0'
-              value={name0}
-              onChange={this.handleChange}
+          <Form.Group className="group-1">
+          <label>First Name</label>
+              <Form.Input
+                placeholder='First Name'
+                name='first_name'
+                value={first_name}
+                onChange={this.handleChange}
               />
+              <label>Last Name</label>
+              <Form.Input
+                placeholder='Last Name'
+                name='last_name'
+                value={last_name}
+                onChange={this.handleChange}
+              />
+              <label>Last 4 Digits of SSN</label>
+              <Form.Input
+                placeholder='Last 4 of SSN'
+                name='ssn'
+                value={ssn}
+                onChange={this.handleChange}
+                validations="isNumeric"
+                validationErrors={{ isNumeric: 'Must be a number' }}
+                errorLabel={ <label color="red" pointing/> }
+              />
+              </Form.Group>
               <h3>Today's Date</h3>
               <Form.Input
                 placeholder='Date'
@@ -289,9 +307,9 @@ function ReferralList() {
           <p></p>
           <p></p>
           <strong>onChange:</strong>
-          <pre>{JSON.stringify({ name0, date0, entry, discharge, date1, date2, date3, date4, date5, date6, date7, date8, date9, date10, ref1, ref2, ref3, ref4, ref5, ref6, ref7, ref8, ref9, ref10 }, null, 2)}</pre>
+          <pre>{JSON.stringify({ date0, entry, discharge, date1, date2, date3, date4, date5, date6, date7, date8, date9, date10, ref1, ref2, ref3, ref4, ref5, ref6, ref7, ref8, ref9, ref10, first_name, last_name, ssn}, null, 2)}</pre>
           <strong>onSubmit:</strong>
-          <pre>{JSON.stringify({ subname0, subdate0, subentry, subdischarge, subdate1, subdate2, subdate3, subdate4, subdate5, subdate6, subdate7, subdate8, subdate9, subdate10, subref1, subref2, subref3, subref4, subref5, subref6, subref7, subref8, subref9, subref10 }, null, 2)}</pre>
+          <pre>{JSON.stringify({ subdate0, subentry, subdischarge, subdate1, subdate2, subdate3, subdate4, subdate5, subdate6, subdate7, subdate8, subdate9, subdate10, subref1, subref2, subref3, subref4, subref5, subref6, subref7, subref8, subref9, subref10, sub_first_name, sub_last_name, sub_ssn }, null, 2)}</pre>
         </div>
       )
     }
