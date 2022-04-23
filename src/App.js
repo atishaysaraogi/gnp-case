@@ -12,6 +12,7 @@ function App() {
     <div>
       <Routes>
         <Route path="/" element={< Intake/>} />
+        <Route path="display" element={<Display />} />
         <Route path="metrics" element={<Metrics />} />
       </Routes>
     </div>

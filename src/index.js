@@ -14,18 +14,6 @@ root.render(
     <App />
   </BrowserRouter>,
   
-  // <React.StrictMode>
-  //   <App />
-  // </React.StrictMode>
-
-  // <BrowserRouter>
-  //   <Routes>
-  //     <Route path="/" element={<App />} />
-  //     <Route path="intake" element={<Intake />} />
-  //     <Route path="metrics" element={<Metrics />} />
-  //   </Routes>
-  // </BrowserRouter>,
-  // root
 );
 
 
