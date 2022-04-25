@@ -1,6 +1,11 @@
 import { render } from "react-dom";
 import './App.css';
 import { useState, useEffect, Component } from "react";
+import IndServicePlan from './IndServicePlan';
+import CaseNotes from './CaseNotes.js'
+import ReferralList from './ReferralList.js'
+import AssessmentIntake from './AssessmentIntake.js';
+import HousingPlan from './HousingPlan.js'
 import Intake from './Intake.js';
 import Metrics from './Metrics.js';
 import { Routes, Route, Link } from "react-router-dom";
@@ -16,7 +21,6 @@ function App() {
         <Route path="metrics" element={<Metrics />} />
       </Routes>
     </div>
-    
   );
 }
 
