@@ -30,7 +30,7 @@ function IndServicePlan() {
               action_item_a4: '', sub_action_item_a4: '', proj_date_a4: '', sub_proj_date_a4: '', act_date_a4: '', sub_act_date_a4: '',
               action_item_b4: '', sub_action_item_b4: '', proj_date_b4: '', sub_proj_date_b4: '', act_date_b4: '', sub_act_date_b4: '',
               action_item_a5: '', sub_action_item_a5: '', proj_date_a5: '', sub_proj_date_a5: '', act_date_a5: '', sub_act_date_a5: '',
-              action_item_b5: '', sub_action_item_b5: '', proj_date_b5: '', sub_proj_date_b5: '', act_date_b5: '', sub_act_date_b5: '', ssn: '', subssn: ''
+              action_item_b5: '', sub_action_item_b5: '', proj_date_b5: '', sub_proj_date_b5: '', act_date_b5: '', sub_act_date_b5: '', ssn: '', subssn: '', 
   }
 
     handleChange = (e, { name, value }) => this.setState({ [name]: value })
@@ -41,7 +41,7 @@ function IndServicePlan() {
               action_item_a2, proj_date_a2, act_date_a2, action_item_b2, proj_date_b2, act_date_b2,
               action_item_a3, proj_date_a3, act_date_a3, action_item_b3, proj_date_b3, act_date_b3,
               action_item_a4, proj_date_a4, act_date_a4, action_item_b4, proj_date_b4, act_date_b4,
-              action_item_a5, proj_date_a5, act_date_a5, action_item_b5, proj_date_b5, act_date_b5, ssn
+              action_item_a5, proj_date_a5, act_date_a5, action_item_b5, proj_date_b5, act_date_b5, ssn, red, orange, yellow, green, blue
 
 } = this.state
   
@@ -56,7 +56,7 @@ function IndServicePlan() {
                       sub_action_item_a4: action_item_a4, sub_proj_date_a4: proj_date_a4, sub_act_date_a4: act_date_a4,
                       sub_action_item_b4: action_item_b4, sub_proj_date_b4: proj_date_b4, sub_act_date_b4: act_date_b4,
                       sub_action_item_a5: action_item_a5, sub_proj_date_a5: proj_date_a5, sub_act_date_a5: act_date_a5,
-                      sub_action_item_b5: action_item_b5, sub_proj_date_b5: proj_date_b5, sub_act_date_b5: act_date_b5, subssn: ssn})
+                      sub_action_item_b5: action_item_b5, sub_proj_date_b5: proj_date_b5, sub_act_date_b5: act_date_b5, subssn: ssn, subred: red, suborange: orange, subyellow: yellow, subgreen: green, subblue: blue})
     }
   
     render() {
@@ -71,7 +71,7 @@ function IndServicePlan() {
       action_item_a4, sub_action_item_a4, proj_date_a4, sub_proj_date_a4, act_date_a4, sub_act_date_a4,
       action_item_b4, sub_action_item_b4, proj_date_b4, sub_proj_date_b4, act_date_b4, sub_act_date_b4,
       action_item_a5, sub_action_item_a5, proj_date_a5, sub_proj_date_a5, act_date_a5, sub_act_date_a5,
-      action_item_b5, sub_action_item_b5, proj_date_b5, sub_proj_date_b5, act_date_b5, sub_act_date_b5, ssn, subssn  } = this.state
+      action_item_b5, sub_action_item_b5, proj_date_b5, sub_proj_date_b5, act_date_b5, sub_act_date_b5, ssn, subssn, red, subred, orange, suborange, yellow, subyellow, green, subgreen, blue, subblue  } = this.state
   
   const errorLabel = <label color="red" pointing/>
   
@@ -377,6 +377,91 @@ function IndServicePlan() {
               value={act_date_b5}
               onChange={this.handleChange}
               />
+
+
+
+              <label><b>Red?</b></label>
+                <Form.Radio
+                  name='red'
+                  label='Yes'
+                  value={true}
+                  checked={this.state.red == true}
+                  onChange={this.handleChange}
+                />
+                <Form.Radio
+                  name='red'
+                  label='No'
+                  value={false}
+                  checked={this.state.red == false}
+                  onChange={this.handleChange}
+                  />
+
+<label><b>Orange?</b></label>
+                <Form.Radio
+                  name='orange'
+                  label='Yes'
+                  value={true}
+                  checked={this.state.orange == true}
+                  onChange={this.handleChange}
+                />
+                <Form.Radio
+                  name='orange'
+                  label='No'
+                  value={false}
+                  checked={this.state.orange == false}
+                  onChange={this.handleChange}
+                  />
+
+<label><b>Yellow?</b></label>
+                <Form.Radio
+                  name='yellow'
+                  label='Yes'
+                  value={true}
+                  checked={this.state.yellow == true}
+                  onChange={this.handleChange}
+                />
+                <Form.Radio
+                  name='yellow'
+                  label='No'
+                  value={false}
+                  checked={this.state.yellow == false}
+                  onChange={this.handleChange}
+                  />
+
+<label><b>Green?</b></label>
+                <Form.Radio
+                  name='green'
+                  label='Yes'
+                  value={true}
+                  checked={this.state.green == true}
+                  onChange={this.handleChange}
+                />
+                <Form.Radio
+                  name='green'
+                  label='No'
+                  value={false}
+                  checked={this.state.green == false}
+                  onChange={this.handleChange}
+                  />
+
+<label><b>Blue?</b></label>
+                <Form.Radio
+                  name='blue'
+                  label='Yes'
+                  value={true}
+                  checked={this.state.blue == true}
+                  onChange={this.handleChange}
+                />
+                <Form.Radio
+                  name='blue'
+                  label='No'
+                  value={false}
+                  checked={this.state.blue == false}
+                  onChange={this.handleChange}
+                  />
+
+
+              <Form.Button content='Submit' />
               </Form>
 
           <p></p>
@@ -387,7 +472,7 @@ function IndServicePlan() {
             action_item_a2, proj_date_a2, act_date_a2, action_item_b2, proj_date_b2, act_date_b2, 
             action_item_a3, proj_date_a3, act_date_a3, action_item_b3, proj_date_b3, act_date_b3, 
             action_item_a4, proj_date_a4, act_date_a4, action_item_b4, proj_date_b4, act_date_b4,
-            action_item_a5, proj_date_a5, act_date_a5, action_item_b5, proj_date_b5, act_date_b5, ssn
+            action_item_a5, proj_date_a5, act_date_a5, action_item_b5, proj_date_b5, act_date_b5, ssn, red, orange, yellow, green, blue
  }, null, 2)}</pre>
           <strong>onSubmit:</strong>
           <pre>{JSON.stringify({ submittedFirstName, submittedLastName, submitteddob, submittedIntake, submittedNumChildren, submittedDischargeDate, sub_dip, sub_job, sub_job_desc, sub_emp_add, sub_emp_phone, sub_years_worked, sub_mon_worked, sub_hour_wage, sub_bi_wage, sub_mon_wage, 
@@ -396,7 +481,7 @@ function IndServicePlan() {
                                   sub_action_item_a2, sub_proj_date_a2, sub_act_date_a2, sub_action_item_b2, sub_proj_date_b2, sub_act_date_b2,
                                   sub_action_item_a3, sub_proj_date_a3, sub_act_date_a3, sub_action_item_b3, sub_proj_date_b3, sub_act_date_b3,
                                   sub_action_item_a4, sub_proj_date_a4, sub_act_date_a4, sub_action_item_b4, sub_proj_date_b4, sub_act_date_b4,
-                                  sub_action_item_a5, sub_proj_date_a5, sub_act_date_a5, sub_action_item_b5, sub_proj_date_b5, sub_act_date_b5, subssn
+                                  sub_action_item_a5, sub_proj_date_a5, sub_act_date_a5, sub_action_item_b5, sub_proj_date_b5, sub_act_date_b5, subssn, subred, suborange, subyellow, subgreen, subblue
  }, null, 2)}</pre>
         </div>
       )

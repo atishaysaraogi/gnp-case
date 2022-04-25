@@ -23,13 +23,13 @@ function HousingPlan() {
     handleChange = (e, { name, value }) => this.setState({ [name]: value })
   
     handleSubmit = () => {
-      const { act_30, act_60, act_90, act_120, first_name, last_name, ssn } = this.state
+      const { act_30, act_60, act_90, act_120, first_name, last_name, ssn, red, orange, yellow, green, blue } = this.state
   
-      this.setState({   sub_act_30: act_30, sub_act_60: act_60, sub_act_90: act_90, sub_act_120: act_120, sub_first_name: first_name, sub_last_name: last_name, sub_ssn: ssn
+      this.setState({   sub_act_30: act_30, sub_act_60: act_60, sub_act_90: act_90, sub_act_120: act_120, sub_first_name: first_name, sub_last_name: last_name, sub_ssn: ssn, subred: red, suborange: orange, subyellow: yellow, subgreen: green, subblue: blue
       })}
   
     render() {
-      const {       act_30, sub_act_30, act_60, sub_act_60, act_90, sub_act_90, act_120, sub_act_120, first_name, last_name, ssn, sub_first_name, sub_last_name, sub_ssn
+      const {       act_30, sub_act_30, act_60, sub_act_60, act_90, sub_act_90, act_120, sub_act_120, first_name, last_name, ssn, sub_first_name, sub_last_name, sub_ssn, red, subred, orange, suborange, yellow, subyellow, green, subgreen, blue, subblue
       } = this.state
   
   const errorLabel = <label color="red" pointing/>
@@ -96,13 +96,96 @@ function HousingPlan() {
               value={act_120}
               onChange={this.handleChange}
               />
-          <p></p>
+
+
+          <label><b>Red?</b></label>
+                <Form.Radio
+                  name='red'
+                  label='Yes'
+                  value={true}
+                  checked={this.state.red == true}
+                  onChange={this.handleChange}
+                />
+                <Form.Radio
+                  name='red'
+                  label='No'
+                  value={false}
+                  checked={this.state.red == false}
+                  onChange={this.handleChange}
+                  />
+
+<label><b>Orange?</b></label>
+                <Form.Radio
+                  name='orange'
+                  label='Yes'
+                  value={true}
+                  checked={this.state.orange == true}
+                  onChange={this.handleChange}
+                />
+                <Form.Radio
+                  name='orange'
+                  label='No'
+                  value={false}
+                  checked={this.state.orange == false}
+                  onChange={this.handleChange}
+                  />
+
+<label><b>Yellow?</b></label>
+                <Form.Radio
+                  name='yellow'
+                  label='Yes'
+                  value={true}
+                  checked={this.state.yellow == true}
+                  onChange={this.handleChange}
+                />
+                <Form.Radio
+                  name='yellow'
+                  label='No'
+                  value={false}
+                  checked={this.state.yellow == false}
+                  onChange={this.handleChange}
+                  />
+
+<label><b>Green?</b></label>
+                <Form.Radio
+                  name='green'
+                  label='Yes'
+                  value={true}
+                  checked={this.state.green == true}
+                  onChange={this.handleChange}
+                />
+                <Form.Radio
+                  name='green'
+                  label='No'
+                  value={false}
+                  checked={this.state.green == false}
+                  onChange={this.handleChange}
+                  />
+
+<label><b>Blue?</b></label>
+                <Form.Radio
+                  name='blue'
+                  label='Yes'
+                  value={true}
+                  checked={this.state.blue == true}
+                  onChange={this.handleChange}
+                />
+                <Form.Radio
+                  name='blue'
+                  label='No'
+                  value={false}
+                  checked={this.state.blue == false}
+                  onChange={this.handleChange}
+                  />
+
+
+
           <Form.Button content='Submit' />
           </Form>
           <strong>onChange:</strong>
-          <pre>{JSON.stringify({ act_30, act_60, act_90, act_120, first_name, last_name, ssn }, null, 2)}</pre>
+          <pre>{JSON.stringify({ act_30, act_60, act_90, act_120, first_name, last_name, ssn, red, orange, yellow, green, blue }, null, 2)}</pre>
           <strong>onSubmit:</strong>
-          <pre>{JSON.stringify({ sub_act_30, sub_act_60, sub_act_90, sub_act_120, sub_first_name, sub_last_name, sub_ssn }, null, 2)}</pre>
+          <pre>{JSON.stringify({ sub_act_30, sub_act_60, sub_act_90, sub_act_120, sub_first_name, sub_last_name, sub_ssn, subred, suborange, subyellow, subgreen, subblue }, null, 2)}</pre>
         </div>
       )
     }

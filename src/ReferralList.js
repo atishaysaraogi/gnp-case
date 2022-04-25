@@ -26,17 +26,17 @@ function ReferralList() {
     handleChange = (e, { name, value }) => this.setState({ [name]: value })
   
     handleSubmit = () => {
-      const { date0, entry, discharge, date1, date2, date3, date4, date5, date6, date7, date8, date9, date10, ref1, ref2, ref3, ref4, ref5, ref6, ref7, ref8, ref9, ref10, first_name, last_name, ssn } = this.state
+      const { date0, entry, discharge, date1, date2, date3, date4, date5, date6, date7, date8, date9, date10, ref1, ref2, ref3, ref4, ref5, ref6, ref7, ref8, ref9, ref10, first_name, last_name, ssn, red, orange, yellow, green, blue } = this.state
   
       this.setState({ subdate0: date0, subentry: entry, subdischarge: discharge, subdate1: date1, subdate2: date2, subdate3: date3,
                         subdate4: date4, subdate5: date5, subdate6: date6, subdate7: date7, subdate8: date8, subdate9: date9, subdate10: date10,
                         subref1: ref1, subref2: ref2, subref3: ref3, subref4: ref4, subref5: ref5, subref6: ref6, subref7: ref7, subref8: ref8,
-                        subref9: ref9, subref10: ref10, sub_first_name: first_name, sub_last_name: last_name, sub_ssn: ssn })}
+                        subref9: ref9, subref10: ref10, sub_first_name: first_name, sub_last_name: last_name, sub_ssn: ssn, subred: red, suborange: orange, subyellow: yellow, subgreen: green, subblue: blue })}
   
     render() {
       const { date0, subdate0, entry, subentry, discharge, subdischarge, date1, subdate1, date2, subdate2, 
             date3, subdate3, date4, subdate4, date5, subdate5, date6, subdate6, date7, subdate7, date8, subdate8, date9, subdate9, date10, subdate10,
-            ref1, subref1, ref2, subref2, ref3, subref3, ref4, subref4, ref5, subref5, ref6, subref6, ref7, subref7, ref8, subref8, ref9, subref9, ref10, subref10, first_name, last_name, ssn, sub_first_name, sub_last_name, sub_ssn } = this.state
+            ref1, subref1, ref2, subref2, ref3, subref3, ref4, subref4, ref5, subref5, ref6, subref6, ref7, subref7, ref8, subref8, ref9, subref9, ref10, subref10, first_name, last_name, ssn, sub_first_name, sub_last_name, sub_ssn, red, subred, orange, suborange, yellow, subyellow, green, subgreen, blue, subblue } = this.state
   
   const errorLabel = <label color="red" pointing/>
   
@@ -302,14 +302,99 @@ function ReferralList() {
               />
               </Form.Group>
 
+
+
+
+
+              <label><b>Red?</b></label>
+                <Form.Radio
+                  name='red'
+                  label='Yes'
+                  value={true}
+                  checked={this.state.red == true}
+                  onChange={this.handleChange}
+                />
+                <Form.Radio
+                  name='red'
+                  label='No'
+                  value={false}
+                  checked={this.state.red == false}
+                  onChange={this.handleChange}
+                  />
+
+<label><b>Orange?</b></label>
+                <Form.Radio
+                  name='orange'
+                  label='Yes'
+                  value={true}
+                  checked={this.state.orange == true}
+                  onChange={this.handleChange}
+                />
+                <Form.Radio
+                  name='orange'
+                  label='No'
+                  value={false}
+                  checked={this.state.orange == false}
+                  onChange={this.handleChange}
+                  />
+
+<label><b>Yellow?</b></label>
+                <Form.Radio
+                  name='yellow'
+                  label='Yes'
+                  value={true}
+                  checked={this.state.yellow == true}
+                  onChange={this.handleChange}
+                />
+                <Form.Radio
+                  name='yellow'
+                  label='No'
+                  value={false}
+                  checked={this.state.yellow == false}
+                  onChange={this.handleChange}
+                  />
+
+<label><b>Green?</b></label>
+                <Form.Radio
+                  name='green'
+                  label='Yes'
+                  value={true}
+                  checked={this.state.green == true}
+                  onChange={this.handleChange}
+                />
+                <Form.Radio
+                  name='green'
+                  label='No'
+                  value={false}
+                  checked={this.state.green == false}
+                  onChange={this.handleChange}
+                  />
+
+<label><b>Blue?</b></label>
+                <Form.Radio
+                  name='blue'
+                  label='Yes'
+                  value={true}
+                  checked={this.state.blue == true}
+                  onChange={this.handleChange}
+                />
+                <Form.Radio
+                  name='blue'
+                  label='No'
+                  value={false}
+                  checked={this.state.blue == false}
+                  onChange={this.handleChange}
+                  />
+
+
           <Form.Button content='Submit' />
           </Form>
           <p></p>
           <p></p>
           <strong>onChange:</strong>
-          <pre>{JSON.stringify({ date0, entry, discharge, date1, date2, date3, date4, date5, date6, date7, date8, date9, date10, ref1, ref2, ref3, ref4, ref5, ref6, ref7, ref8, ref9, ref10, first_name, last_name, ssn}, null, 2)}</pre>
+          <pre>{JSON.stringify({ date0, entry, discharge, date1, date2, date3, date4, date5, date6, date7, date8, date9, date10, ref1, ref2, ref3, ref4, ref5, ref6, ref7, ref8, ref9, ref10, first_name, last_name, ssn, red, orange, yellow, green, blue}, null, 2)}</pre>
           <strong>onSubmit:</strong>
-          <pre>{JSON.stringify({ subdate0, subentry, subdischarge, subdate1, subdate2, subdate3, subdate4, subdate5, subdate6, subdate7, subdate8, subdate9, subdate10, subref1, subref2, subref3, subref4, subref5, subref6, subref7, subref8, subref9, subref10, sub_first_name, sub_last_name, sub_ssn }, null, 2)}</pre>
+          <pre>{JSON.stringify({ subdate0, subentry, subdischarge, subdate1, subdate2, subdate3, subdate4, subdate5, subdate6, subdate7, subdate8, subdate9, subdate10, subref1, subref2, subref3, subref4, subref5, subref6, subref7, subref8, subref9, subref10, sub_first_name, sub_last_name, sub_ssn, subred, suborange, subyellow, subgreen, subblue }, null, 2)}</pre>
         </div>
       )
     }
