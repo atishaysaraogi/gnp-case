@@ -1,6 +1,6 @@
 import './App.css';
 import './Display.css';
-import {Image, Dropdown, Button} from 'semantic-ui-react';
+import {Image, Dropdown, Button, Tab} from 'semantic-ui-react';
 
 function Display() {
 
@@ -14,6 +14,12 @@ function Display() {
       intake_date: '04/11/2022',
       date_of_discharge: 'N/A'
     }
+
+    const panes = [
+      { menuItem: 'Tab 1', render: () => <Tab.Pane>Tab 1 Content</Tab.Pane> },
+      { menuItem: 'Tab 2', render: () => <Tab.Pane>Tab 2 Content</Tab.Pane> },
+      { menuItem: 'Tab 3', render: () => <Tab.Pane>Tab 3 Content</Tab.Pane> },
+    ]  
 
   var child1 = 
   {
@@ -75,8 +81,15 @@ function Display() {
             <a href="#" class="buttontest">Case Management Day 60</a>
           </div>
           <div class = "container-horiz-white">
-            <a href="#" class="buttontest">Case Management Day 60</a>
+            <a href="#" class="buttontest">Case Management Day 90</a>
           </div>
+        </div>
+        <div>
+          <Tab
+              menu={{ fluid: true, vertical: true, tabular: 'right'}}
+              menuPosition='right'
+              panes={panes}
+          />
         </div>
         <div class = "container-vert">
           <div class = "form">
@@ -102,45 +115,6 @@ function Display() {
             <h3 align = "left">Primary language spoken:</h3>
             <h3 align = "left">Secondary langauge spoken:</h3>
             <h3 align = "left">Country of Birth:</h3>
-
-
-
-
-
-
-
-
-Child Last Name
-Child First Name
-Child DOB
-Child School Attending
-Child Gender
-Child Age
-Child SSN
-Number of children living at New Life
-Number of children not living at New Life
-Why are they (children not living at New Life) not living with you?
-Why and who are they (children not living at New Life) with?
-How long have you lived apart from your children?
-English-speaking skills
-Primary language spoken
-Secondary langauge spoken
-Country of Birth
-Do you have any difficultly reading?
-Higest grade completed
-Where did you complete highest grade?
-If no high school diploma, are you in a GED program?
-Other vocational training/college hours
-How long did you attend college? Where?
-Are you currently employed?
-Job title/description (of current or most recent job)
-Employer address
-Employer phone number
-Full time or part time?
-Amount per pay period
-Hours per week
-Hourly wage
-Type of work
           </div>
         </div>
         <div class = "container-vert" align = "center">

@@ -8,12 +8,21 @@
     outline: 1px solid black;
   }
 
+
+
   .form {
     display: flex;
     padding: 20px;
     flex-direction: column;
     outline: 1px solid black;
     width: 550px;
+  }
+
+  .form-vert {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+
   }
 
   .rp-container {
