@@ -16,7 +16,11 @@ function App() {
   return (
     <div>
       <Routes>
-        <Route path="/" element={< Intake/>} />
+        <Route path="/" element={< IndServicePlan/>} />
+        <Route path="casenotes" element={< CaseNotes/>} />
+        <Route path="referrallist" element={< ReferralList/>} />
+        <Route path="assessmentintake" element={< AssessmentIntake/>} />
+        <Route path="housingplan" element={< HousingPlan/>} />
         <Route path="display" element={<Display />} />
         <Route path="metrics" element={<Metrics />} />
       </Routes>
