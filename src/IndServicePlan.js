@@ -156,6 +156,7 @@ function IndServicePlan() {
               control={TextArea}
               placeholder='Projected Date of Completion'
               name='proj_date_a1'
+              type="date"
               value={proj_date_a1}
               onChange={this.handleChange}
               />
@@ -163,6 +164,7 @@ function IndServicePlan() {
               control={TextArea}
               placeholder='Actual Date of Completion'
               name='act_date_a1'
+              type="date"
               value={act_date_a1}
               onChange={this.handleChange}
               />
@@ -178,6 +180,7 @@ function IndServicePlan() {
               control={TextArea}
               placeholder='Projected Date of Completion'
               name='proj_date_b1'
+              type="date"
               value={proj_date_b1}
               onChange={this.handleChange}
               />
@@ -185,6 +188,7 @@ function IndServicePlan() {
               control={TextArea}
               placeholder='Actual Date of Completion'
               name='act_date_b1'
+              type="date"
               value={act_date_b1}
               onChange={this.handleChange}
               />
@@ -204,6 +208,7 @@ function IndServicePlan() {
               control={TextArea}
               placeholder='Projected Date of Completion'
               name='proj_date_a2'
+              type="date"
               value={proj_date_a2}
               onChange={this.handleChange}
               />
@@ -211,6 +216,7 @@ function IndServicePlan() {
               control={TextArea}
               placeholder='Actual Date of Completion'
               name='act_date_a2'
+              type="date"
               value={act_date_a2}
               onChange={this.handleChange}
               />
@@ -226,6 +232,7 @@ function IndServicePlan() {
               control={TextArea}
               placeholder='Projected Date of Completion'
               name='proj_date_b2'
+              type="date"
               value={proj_date_b2}
               onChange={this.handleChange}
               />
@@ -233,6 +240,7 @@ function IndServicePlan() {
               control={TextArea}
               placeholder='Actual Date of Completion'
               name='act_date_b2'
+              type="date"
               value={act_date_b2}
               onChange={this.handleChange}
               />
@@ -251,6 +259,7 @@ function IndServicePlan() {
               control={TextArea}
               placeholder='Projected Date of Completion'
               name='proj_date_a3'
+              type="date"
               value={proj_date_a3}
               onChange={this.handleChange}
               />
@@ -258,6 +267,7 @@ function IndServicePlan() {
               control={TextArea}
               placeholder='Actual Date of Completion'
               name='act_date_a3'
+              type="date"
               value={act_date_a3}
               onChange={this.handleChange}
               />
@@ -273,6 +283,7 @@ function IndServicePlan() {
               control={TextArea}
               placeholder='Projected Date of Completion'
               name='proj_date_b3'
+              type="date"
               value={proj_date_b3}
               onChange={this.handleChange}
               />
@@ -280,6 +291,7 @@ function IndServicePlan() {
               control={TextArea}
               placeholder='Actual Date of Completion'
               name='act_date_b3'
+              type="date"
               value={act_date_b3}
               onChange={this.handleChange}
               />
@@ -298,6 +310,7 @@ function IndServicePlan() {
               control={TextArea}
               placeholder='Projected Date of Completion'
               name='proj_date_a4'
+              type="date"
               value={proj_date_a4}
               onChange={this.handleChange}
               />
@@ -305,6 +318,7 @@ function IndServicePlan() {
               control={TextArea}
               placeholder='Actual Date of Completion'
               name='act_date_a4'
+              type="date"
               value={act_date_a4}
               onChange={this.handleChange}
               />
@@ -320,6 +334,7 @@ function IndServicePlan() {
               control={TextArea}
               placeholder='Projected Date of Completion'
               name='proj_date_b4'
+              type="date"
               value={proj_date_b4}
               onChange={this.handleChange}
               />
@@ -327,6 +342,7 @@ function IndServicePlan() {
               control={TextArea}
               placeholder='Actual Date of Completion'
               name='act_date_b4'
+              type="date"
               value={act_date_b4}
               onChange={this.handleChange}
               />
@@ -338,6 +354,7 @@ function IndServicePlan() {
               control={TextArea}
               placeholder='Action Item'
               name='action_item_a5'
+              type="date"
               value={action_item_a5}
               onChange={this.handleChange}
               />
@@ -345,6 +362,7 @@ function IndServicePlan() {
               control={TextArea}
               placeholder='Projected Date of Completion'
               name='proj_date_a5'
+              type="date"
               value={proj_date_a5}
               onChange={this.handleChange}
               />
@@ -352,6 +370,7 @@ function IndServicePlan() {
               control={TextArea}
               placeholder='Actual Date of Completion'
               name='act_date_a5'
+              type="date"
               value={act_date_a5}
               onChange={this.handleChange}
               />
@@ -367,6 +386,7 @@ function IndServicePlan() {
               control={TextArea}
               placeholder='Projected Date of Completion'
               name='proj_date_b5'
+              type="date"
               value={proj_date_b5}
               onChange={this.handleChange}
               />
@@ -374,6 +394,7 @@ function IndServicePlan() {
               control={TextArea}
               placeholder='Actual Date of Completion'
               name='act_date_b5'
+              type="date"
               value={act_date_b5}
               onChange={this.handleChange}
               />
