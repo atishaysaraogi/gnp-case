@@ -2,15 +2,57 @@ import gnp from './GNP_Logo_RGB.png';
 import './App.css';
 import React, {Component} from 'react';
 import { render } from "react-dom";
-import { Button, Search, Dropdown, Grid, Segment} from 'semantic-ui-react';
+import { Button, Search, Dropdown, Grid, Segment, Tab} from 'semantic-ui-react';
 import Bar from './Bar.js';
 import Data from "./data.json"
+import DataSSN from "./data_ssn.json"
+import DataAge from "./data_age.json"
+
 
 const options = [
   {key: 1, value: 1, text: "Alice"}, 
   {key: 2, value: 2, text: "Bob"}, 
   {key: 3, value: 3, text: "Claire"}
  ];
+
+ const panes = [
+  { menuItem: 'Search by Name', render: () => <Tab.Pane>
+    <Dropdown
+                button
+                className='icon'
+                fluid
+                labeled
+                icon='search'
+                options={Data}
+                search
+                text='Search'
+              />
+  </Tab.Pane> },
+  { menuItem: 'Search by SSN', render: () => <Tab.Pane>
+    <Dropdown
+                button
+                className='icon'
+                fluid
+                labeled
+                icon='search'
+                options={DataSSN}
+                search
+                text='Search'
+              />
+  </Tab.Pane> },
+  { menuItem: 'Search by Age', render: () => <Tab.Pane>
+    <Dropdown
+                button
+                className='icon'
+                fluid
+                labeled
+                icon='search'
+                options={DataAge}
+                search
+                text='Search'
+              />
+  </Tab.Pane> },
+]
 
 function SearchBarPage() {
   return (
@@ -37,7 +79,7 @@ function SearchBarPage() {
               {/* <Search size='big' /> */}
               {/* <Bar /> */}
 
-              <Dropdown
+              {/* <Dropdown
                 button
                 className='icon'
                 fluid
@@ -46,29 +88,28 @@ function SearchBarPage() {
                 options={Data}
                 search
                 text='Search'
-              />
+              /> */}
+
+              <Tab panes={panes} />
+
+
 
 
 
             </Grid.Column>
 
-            <Grid.Column width={2}>
+
+            {/* <Grid.Column width={2}>
               <Dropdown icon='filter' text='search by'>
                 <Dropdown.Menu>
-                <Dropdown.Item text='First Name' />
-                <Dropdown.Item text='Last Name' />
-                <Dropdown.Item text='Last Name' />
+                <Dropdown.Item text='Name' />
                 <Dropdown.Item text='Age' />
                 <Dropdown.Item text='Intake Period' />
                 <Dropdown.Item text='SSN' description='last 4 digits' />
                 </Dropdown.Menu>
               </Dropdown>
-            </Grid.Column>
+            </Grid.Column> */}
 
-            <Grid.Column width={1}>
-              {/* <Button size='mini'> search </Button> */}
-              
-            </Grid.Column>
 
             <Grid.Column>
             </Grid.Column>
