@@ -5,6 +5,8 @@ import React, { useCallback, useState } from "react";
 import {Dropdown, Table} from 'semantic-ui-react';
 import {CartesianGrid, XAxis, YAxis, Tooltip, Legend, Line, LineChart, PieChart, Pie, Cell, Sector, Bar, BarChart, RadialBar, RadialBarChart} from 'recharts';
 
+const geoUrl = "https://raw.githubusercontent.com/OpenDataDE/State-zip-code-GeoJSON/master/il_illinois_zip_codes_geo.min.json";
+
 const numberOfClients = [
   {"name": "Carryover from Dec", "Clients": 20, "Households": 9},
   {"name": "Jan-Mar (new)", "Clients": 29, "Households": 4},
@@ -80,6 +82,16 @@ const gender = [
   { name: 'No Response', value: 10, fill:"#bb3e03"}
 ];
 
+const geo = [
+  { name: 'hi', value: 10},
+  { name: 'bye', value: 30},
+  { name: 'Transgender Woman', value: 25},
+  { name: 'Transgender Man', value: 20},
+  { name: 'Non-binary/non-conforming', value: 15},
+  { name: 'Other', value: 25},
+  { name: 'No Response', value: 10}
+];
+
 
 const COLORS = ['#0088FE', '#00C49F'];
 const COLOR = ['#FFBB28', '#FF8042'];
@@ -132,6 +144,8 @@ const renderActiveShape = (props: any) => {
   );
 };
 
+
+
 function Metrics() {
 
   const [activeIndex, setActiveIndex] = useState(0);
@@ -141,6 +155,8 @@ function Metrics() {
     },
     [setActiveIndex]
   );
+
+  const [content, setContent] = useState("");
 
   return (
     
@@ -327,7 +343,7 @@ function Metrics() {
         <h2 className = "graphHead"> Program Participant Arrival/Departures: </h2>
         <h3 className = "graphHead" id= 'clis'> Number of Clients and Households: </h3>
         <div className = "numberClients">
-            <LineChart width={640} height={350} data={numberOfClients} margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
+            <LineChart width={680} height={350} data={numberOfClients} margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
               <CartesianGrid strokeDasharray="3 3" />
               <XAxis dataKey="name" />
               <YAxis />
@@ -338,6 +354,8 @@ function Metrics() {
             </LineChart>
         </div>
 
+        <br></br>
+        <br></br>
 
         <h3 id= 'numExitCli'> Program Departures Exit Program to Permanent Housing within ___ days: </h3>
         <div className = "exitedClients">
@@ -351,9 +369,19 @@ function Metrics() {
           </BarChart>
         </div>
 
-        <br></br>
-        <br></br>
+        <div className = "map">
 
+          <iframe title="zipcode_map"
+            width="800" 
+            height="600" 
+            src="https://datastudio.google.com/embed/reporting/c762ad9d-5ea0-4784-9e90-8a02a9da5214/page/JfsrC" 
+            frameborder="0" 
+            allowfullscreen/>
+
+        </div>
+
+        <br></br>
+        <br></br>
         <Dropdown
           placeholder='Search More'
           fluid
@@ -361,18 +389,7 @@ function Metrics() {
           search
           selection
           options={options}/>
-
       </div>
-
-      <br></br>
-      <br></br>
-
-      <div className = 'bottom'>
-
-      
-       
-      </div>
-
     </div>
   );
 }
