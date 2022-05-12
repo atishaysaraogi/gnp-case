@@ -189,4 +189,11 @@
   width: 100%;
 }
 
+.header {
+  padding: 20px;
+  text-align: center;
+  background: #30D5C8;
+  color: white;
+  font-size: 30px;
+}
 
