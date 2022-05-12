@@ -2,13 +2,19 @@ import React, { Component } from "react";
 import { render } from "react-dom";
 import { Search } from "semantic-ui-react";
 
+
+
 const results = [
     {
-      name: "John",
+      name: "John Apple",
       age: 14
     },
     {
-      name: "Mary",
+      name: "Natalie Smith",
+      age: 20
+    },
+    {
+      name: "Mary Brown",
       age: 92
     }];
 
@@ -18,7 +24,7 @@ class Bar extends Component {
       
       const resRender = ({ name, age }) => (
         <span key="name">
-          {name} is {age} yo
+          {name}, {age} yo
         </span>
       );
       return (
@@ -30,6 +36,8 @@ class Bar extends Component {
           results={results}
           resultRenderer={resRender}
         />
+
+        
       );
     }
   }
