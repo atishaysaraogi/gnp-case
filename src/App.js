@@ -11,6 +11,7 @@ import { Routes, Route, Link } from "react-router-dom";
 import Display from './Display.js';
 import SearchBarPage from "./SearchBarPage";
 import logo from "./GNP_Logo_RGB.png";
+import { Button } from "semantic-ui-react";
 
 function App() {
 
@@ -18,6 +19,11 @@ function App() {
     <div>
       <div class="header">
       <img src={logo} width="190"/>
+
+      <p></p>
+
+      <a href='/'><Button size='massive' color='blue' path=''> Home Page </Button></a>
+
       <h2>Good News Partners Case Management Database</h2>
     </div>
       <Routes>

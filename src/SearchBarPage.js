@@ -59,12 +59,8 @@ function SearchBarPage() {
     <div className="App">
 
         <h1>  </h1> 
-        
-        <img src={gnp} className="gnp-logo" alt = "logo"/>
-
-        <h1> Case Management Database </h1>
     
-        <Button size='massive' color='blue'> ADD NEW RECORD </Button>
+       <a href='casenotes'><Button size='massive' color='blue' path=''> Case Notes </Button></a>
 
         <h2>  </h2>
 
