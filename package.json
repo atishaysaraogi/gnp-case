@@ -1,5 +1,8 @@
 {
   "name": "newrepo",
+  "engines":{
+    "node": "16.11.x"
+  },
   "version": "0.1.0",
   "private": true,
   "dependencies": {
