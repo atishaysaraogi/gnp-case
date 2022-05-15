@@ -38,7 +38,11 @@ function HousingPlan() {
         <div class="form-cont">
         <Form onSubmit={this.handleSubmit}>
         <h2>Housing Plan</h2>
+        <div class="ui grid">
+    <div class="ui form ten wide column centered">
+    <div class="one field">
         <Form.Group className="group-1">
+
           <label>First Name</label>
               <Form.Input
                 placeholder='First Name'
@@ -96,6 +100,14 @@ function HousingPlan() {
               value={act_120}
               onChange={this.handleChange}
               />
+              </div>
+        </div>
+      </div>
+      <p>
+      </p>
+
+      <p>
+      </p>
 
 
           <label><b>Red?</b></label>
@@ -182,11 +194,7 @@ function HousingPlan() {
 
           <Form.Button content='Submit' />
           </Form>
-          <strong>onChange:</strong>
-          <pre>{JSON.stringify({ act_30, act_60, act_90, act_120, first_name, last_name, ssn, red, orange, yellow, green, blue }, null, 2)}</pre>
-          <strong>onSubmit:</strong>
-          <pre>{JSON.stringify({ sub_act_30, sub_act_60, sub_act_90, sub_act_120, sub_first_name, sub_last_name, sub_ssn, subred, suborange, subyellow, subgreen, subblue }, null, 2)}</pre>
-        </div>
+         </div>
       )
     }
   }

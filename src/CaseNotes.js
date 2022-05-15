@@ -60,8 +60,14 @@ function CaseNotes() {
                 validationErrors={{ isNumeric: 'Must be a number' }}
                 errorLabel={ <label color="red" pointing/> }
               />
+
+
               </Form.Group>
               <h3>Today's Date</h3>
+
+              <div class="ui grid">
+    <div class="ui form ten wide column centered">
+    <div class="one field">
               <Form.Input
                 placeholder='Date'
                 name='date1'
@@ -69,16 +75,34 @@ function CaseNotes() {
                 type="date"
                 onChange={this.handleChange}
               />
+
+
+</div>
+        </div>
+      </div>
+
               <h3>Case Notes</h3>
+
+              <div class="ui grid">
+    <div class="ui form ten wide column centered">
+    <div class="one field">
+
             <Form.Field
               control={TextArea}
               placeholder='Case Notes'
               name='case_notes'
               value={case_notes}
               onChange={this.handleChange}
+              width="200"
               />
 
+</div>
+        </div>
+      </div>
 
+
+<p></p>
+<p></p>
 
 <label><b>Red?</b></label>
                 <Form.Radio
@@ -166,11 +190,7 @@ function CaseNotes() {
           </Form>
           <p></p>
           <p></p>
-          <strong>onChange:</strong>
-          <pre>{JSON.stringify({ date1, case_notes, first_name, last_name, ssn, red, orange, yellow, green, blue }, null, 2)}</pre>
-          <strong>onSubmit:</strong>
-          <pre>{JSON.stringify({ subdate1, sub_case_notes, sub_first_name, sub_last_name, sub_ssn, subred, suborange, subyellow, subgreen, subblue }, null, 2)}</pre>
-        </div>
+      </div>
       )
     }
   }

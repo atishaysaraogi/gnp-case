@@ -203,10 +203,14 @@
 }
 
 .header {
-  padding: 20px;
+  padding: 15px;
   text-align: center;
-  background: #30D5C8;
+  background: #ADD8E6;
   color: white;
   font-size: 30px;
+}
+
+.logo {
+  float:right;
 }
 

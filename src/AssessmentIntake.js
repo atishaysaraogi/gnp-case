@@ -102,6 +102,9 @@ function AssessmentIntake() {
                   onChange={this.handleChange}
                 />
               <p></p>
+              <div class="ui grid">
+    <div class="ui form ten wide column centered">
+    <div class="one field">
               <label>If you do have a job:</label>
               <Form.Input
                 placeholder='Job Description'
@@ -121,7 +124,15 @@ function AssessmentIntake() {
                 value={emp_phone}
                 onChange={this.handleChange}
               />
+                            </div>
+        </div>
+      </div>
+      <p>
+      </p>
+      <p>
+      </p>
               <Form.Group className="group-1">
+
               <label>Number of years worked there</label>
             <Form.Input
                 placeholder='# years worked there'
@@ -143,6 +154,8 @@ function AssessmentIntake() {
                 validationErrors={{ isNumeric: 'Must be a number' }}
                 errorLabel={ errorLabel }
               />
+                            </Form.Group>
+                            <Form.Group className="group-1">
               <label>Hourly wage</label>
             <Form.Input
                 placeholder='Hourly wage'
@@ -153,8 +166,8 @@ function AssessmentIntake() {
                 validationErrors={{ isNumeric: 'Must be a number' }}
                 errorLabel={ errorLabel }
               />
-              </Form.Group>
-              <Form.Group className="group-1">
+
+
               <label>Bi-weekly wage</label>
             <Form.Input
                 placeholder='Bi-weekly wage'
@@ -192,6 +205,9 @@ function AssessmentIntake() {
                   onChange={this.handleChange}
                 />
               <p></p>
+              <div class="ui grid">
+    <div class="ui form ten wide column centered">
+    <div class="one field">
               <label>If you are enrolled in job training:</label>
               <Form.Input
                 placeholder='Training Program'
@@ -205,6 +221,9 @@ function AssessmentIntake() {
                 value={tr_loc}
                 onChange={this.handleChange}
               />
+              </div>
+        </div>
+      </div>
            <p></p>
               <label><b>4) Do you have any job skills?</b></label>
                 <Form.Radio
@@ -223,6 +242,9 @@ function AssessmentIntake() {
                   onChange={this.handleChange}
                 />
               <p></p>
+              <div class="ui grid">
+    <div class="ui form ten wide column centered">
+    <div class="one field">
               <label>If so, what are your job skills?</label>
               <Form.Field
               control={TextArea}
@@ -231,8 +253,17 @@ function AssessmentIntake() {
               value={skills}
               onChange={this.handleChange}
               />
+                            </div>
+        </div>
+      </div>
 
+      <p>
 
+      </p>
+
+<p>
+  
+</p>
 
 <label><b>Red?</b></label>
                 <Form.Radio
@@ -319,13 +350,7 @@ function AssessmentIntake() {
               <Form.Button content='Submit' />
               </Form>
           <p></p>
-          <strong>onChange:</strong>
-          <pre>{JSON.stringify({ dip, job, job_desc, emp_add, emp_phone, years_worked, mon_worked, hour_wage, bi_wage, mon_wage, tr, tr_pro, tr_loc, sk, skills, first_name, last_name, ssn, red, orange, yellow, green, blue
-            }, null, 2)}</pre>
-                    <strong>onSubmit:</strong>
-                    <pre>{JSON.stringify({ sub_dip, sub_job, sub_job_desc, sub_emp_add, sub_emp_phone, sub_years_worked, sub_mon_worked, sub_hour_wage, sub_bi_wage, sub_mon_wage, 
-                                            sub_tr, sub_tr_pro, sub_tr_loc, sub_sk, sub_skills, sub_first_name, sub_last_name, sub_ssn, subred, suborange, subyellow, subgreen, subblue
-            }, null, 2)}</pre>
+     
         </div>
       )
     }

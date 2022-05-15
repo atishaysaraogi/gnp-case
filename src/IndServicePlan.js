@@ -88,7 +88,11 @@ function IndServicePlan() {
           <h1>New Resident Intake Form</h1>
           <h2>Individual Service Plan</h2>
           <Form onSubmit={this.handleSubmit}>
+          <div class="ui grid">
+    <div class="ui form eleven wide column centered">
+    <div class="one field">
           <Form.Group className="group-1">
+
           <label>First Name</label>
               <Form.Input
                 placeholder='First Name'
@@ -149,6 +153,8 @@ function IndServicePlan() {
                 type="date"
                 onChange={this.handleChange}
               />
+              </Form.Group>
+              <Form.Group className="group-1">
                 <label>Original Zip Code of Client (before GNP)</label>
                <Form.Input
                 placeholder='Original Zip Code'
@@ -163,9 +169,20 @@ function IndServicePlan() {
                 value={new_zip}
                 onChange={this.handleChange}
               />
+
+
               </Form.Group>
+              </div>
+        </div>
+      </div>
+
           <h2>Statement of Identified Goals for Self-Sufficiency</h2>
           <h3>Training</h3>
+
+
+          <div class="ui grid">
+    <div class="ui form ten wide column centered">
+    <div class="one field">
           <label>Action Item A</label>
               <Form.Field
               control={TextArea}
@@ -420,6 +437,10 @@ function IndServicePlan() {
               value={act_date_b5}
               onChange={this.handleChange}
               />
+
+</div>
+        </div>
+      </div>
 
             <h3>Race</h3>
             <label><b>Native American or Alaska Native</b></label>
@@ -915,25 +936,7 @@ function IndServicePlan() {
 
           <p></p>
           <p></p>
-          <strong>onChange:</strong>
-          <pre>{JSON.stringify({ first_name, last_name, dob, intake_date, num_children, date_discharge, dip, job, job_desc, emp_add, emp_phone, years_worked, mon_worked, hour_wage, bi_wage, mon_wage, tr, tr_pro, tr_loc, sk, skills,
-            action_item_a1, proj_date_a1, act_date_a1, action_item_b1, proj_date_b1, act_date_b1, 
-            action_item_a2, proj_date_a2, act_date_a2, action_item_b2, proj_date_b2, act_date_b2, 
-            action_item_a3, proj_date_a3, act_date_a3, action_item_b3, proj_date_b3, act_date_b3, 
-            action_item_a4, proj_date_a4, act_date_a4, action_item_b4, proj_date_b4, act_date_b4,
-            action_item_a5, proj_date_a5, act_date_a5, action_item_b5, proj_date_b5, act_date_b5, ssn, red, orange, yellow, green, blue, old_zip, new_zip,
-            native_am, asian, black, hawaii, pacific, white, other_race, hispanic, male, female, trans_male, trans_female, non_bin, other_gen, no_response_gen, heteroseuxal, gay, lesbian, bisexual, asexual, queer, other_sexuality, single_woman, family,
- }, null, 2)}</pre>
-          <strong>onSubmit:</strong>
-          <pre>{JSON.stringify({ submittedFirstName, submittedLastName, submitteddob, submittedIntake, submittedNumChildren, submittedDischargeDate, sub_dip, sub_job, sub_job_desc, sub_emp_add, sub_emp_phone, sub_years_worked, sub_mon_worked, sub_hour_wage, sub_bi_wage, sub_mon_wage, 
-                                  sub_tr, sub_tr_pro, sub_tr_loc, sub_sk, sub_skills, 
-                                  sub_action_item_a1, sub_proj_date_a1, sub_act_date_a1, sub_action_item_b1, sub_proj_date_b1, sub_act_date_b1,
-                                  sub_action_item_a2, sub_proj_date_a2, sub_act_date_a2, sub_action_item_b2, sub_proj_date_b2, sub_act_date_b2,
-                                  sub_action_item_a3, sub_proj_date_a3, sub_act_date_a3, sub_action_item_b3, sub_proj_date_b3, sub_act_date_b3,
-                                  sub_action_item_a4, sub_proj_date_a4, sub_act_date_a4, sub_action_item_b4, sub_proj_date_b4, sub_act_date_b4,
-                                  sub_action_item_a5, sub_proj_date_a5, sub_act_date_a5, sub_action_item_b5, sub_proj_date_b5, sub_act_date_b5, subssn, subred, suborange, subyellow, subgreen, subblue, sub_old_zip, sub_new_zip,
-                                  sub_native_am, sub_asian, sub_black, sub_hawaii, sub_pacific, sub_white, sub_other_race, sub_hispanic, sub_male, sub_female, sub_trans_male, sub_trans_female, sub_non_bin, sub_other_gen, sub_no_response_gen, sub_heterosexual, sub_gay, sub_lesbian, sub_bisexual, sub_asexual, sub_queer, sub_other_sexuality, sub_single_woman, sub_family
- }, null, 2)}</pre>
+
         </div>
       )
     }

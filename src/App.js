@@ -18,13 +18,10 @@ function App() {
   return (
     <div>
       <div class="header">
-      <img src={logo} width="190"/>
+      <img src={logo} width="140"/>
 
-      <p></p>
+      <a class="logo" href='/'><i class="home icon"></i></a>
 
-      <a href='/'><Button size='massive' color='blue' path=''> Home Page </Button></a>
-
-      <h2>Good News Partners Case Management Database</h2>
     </div>
       <Routes>
         <Route path="/" element={< SearchBarPage/>} />

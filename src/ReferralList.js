@@ -70,6 +70,9 @@ function ReferralList() {
                 errorLabel={ <label color="red" pointing/> }
               />
               </Form.Group>
+              <div class="ui grid">
+    <div class="ui form ten wide column centered">
+    <div class="one field">
               <h3>Today's Date</h3>
               <Form.Input
                 placeholder='Date'
@@ -94,7 +97,17 @@ function ReferralList() {
                 type="date"
                 onChange={this.handleChange}
               />
+</div>
+        </div>
+      </div>
 
+      <p>
+
+      </p>
+
+      <p>
+        
+        </p>
 
             <Form.Group className="group-1">
               <label>Date 1</label>
@@ -391,11 +404,7 @@ function ReferralList() {
           </Form>
           <p></p>
           <p></p>
-          <strong>onChange:</strong>
-          <pre>{JSON.stringify({ date0, entry, discharge, date1, date2, date3, date4, date5, date6, date7, date8, date9, date10, ref1, ref2, ref3, ref4, ref5, ref6, ref7, ref8, ref9, ref10, first_name, last_name, ssn, red, orange, yellow, green, blue}, null, 2)}</pre>
-          <strong>onSubmit:</strong>
-          <pre>{JSON.stringify({ subdate0, subentry, subdischarge, subdate1, subdate2, subdate3, subdate4, subdate5, subdate6, subdate7, subdate8, subdate9, subdate10, subref1, subref2, subref3, subref4, subref5, subref6, subref7, subref8, subref9, subref10, sub_first_name, sub_last_name, sub_ssn, subred, suborange, subyellow, subgreen, subblue }, null, 2)}</pre>
-        </div>
+       </div>
       )
     }
   }

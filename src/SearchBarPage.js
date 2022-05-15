@@ -60,7 +60,13 @@ function SearchBarPage() {
 
         <h1>  </h1> 
     
-       <a href='casenotes'><Button size='massive' color='blue' path=''> Case Notes </Button></a>
+      <h1>Intake Forms</h1>
+
+       <a href='casenotes'><Button size='big' color='blue' path=''> Case Notes </Button></a>
+       <a href='indserviceplan'><Button size='big' color='blue' path=''> Individual Service Plan </Button></a>
+       <a href='housingplan'><Button size='big' color='blue' path=''> Hosuing Plan </Button></a>
+       <a href='assessmentintake'><Button size='big' color='blue' path=''> AssessmentIntake </Button></a>
+       <a href='referrallist'><Button size='big' color='blue' path=''> Referral List </Button></a>
 
         <h2>  </h2>
 
