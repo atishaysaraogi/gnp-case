@@ -23,7 +23,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-
+    "server":"node --max-old-space-size={8192} gnp_server/requests.js"
   },
   "eslintConfig": {
     "extends": [
