@@ -14,6 +14,38 @@ import {
 } from 'formsy-semantic-ui-react'
 
 function AssessmentIntake() {
+  const [AssessmentIntake, setAssessmentIntake] = useState(false);
+  useEffect(() => {
+    getAssessment_at_intake();
+  }, []);
+
+  function getAssessment_at_intake() {
+    fetch('http://localhost:3001')
+      .then(response => {
+        return response.text();
+      })
+      .then(data => {
+        setAssessmentIntake(data);
+      });
+  }
+
+  function createAssessment_at_intake() {
+    //handle input using the onsubmit    
+    fetch('http://localhost:3001/assessment_at_intake', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({}),
+    })
+      .then(response => {
+        return response.text();
+      })
+      .then(data => {
+        alert(data);
+        getAssessment_at_intake();
+      });
+  }
 
   class FormExampleCaptureValues extends Component {
     state = { sub_dip: '', sub_job: '', job_desc: '', sub_job_desc: '', emp_add: '', sub_emp_add: '', emp_phone: '', sub_emp_phone: '', 
@@ -217,7 +249,6 @@ function AssessmentIntake() {
                 <Form.Radio
                   name='sk'
                   label='No'
-                  name='sk'
                   value={false}
                   checked={this.state.sk == false}
                   onChange={this.handleChange}

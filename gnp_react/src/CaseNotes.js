@@ -12,19 +12,27 @@ import {
   Select,
   TextArea
 } from 'formsy-semantic-ui-react'
+import casenoteservice from './services/casenotedb'
 
 function CaseNotes() {
 
   class FormExampleCaptureValues extends Component {
 
+    handleaddcasenote = newcasenote => {
+      casenoteservice
+        .addCaseNote({
+          activity: newcasenote
+        })
+    }
     state = { date1: '', case_notes: '', subname1: '', subdate1: '', sub_case_notes: '', first_name: '', sub_first_name: '', last_name: '', sub_late_name: '', ssn: '', sub_ssn: ''}
   
     handleChange = (e, { name, value }) => this.setState({ [name]: value })
   
     handleSubmit = () => {
       const { date1, case_notes, first_name, last_name, ssn, red, orange, yellow, green, blue } = this.state
-  
-      this.setState({ subdate1: date1, sub_case_notes: case_notes, sub_first_name: first_name, sub_last_name: last_name, sub_ssn: ssn, subred: red, suborange: orange, subyellow: yellow, subgreen: green, subblue: blue})}
+      this.setState({ subdate1: date1, sub_case_notes: case_notes, sub_first_name: first_name, sub_last_name: last_name, sub_ssn: ssn, subred: red, suborange: orange, subyellow: yellow, subgreen: green, subblue: blue})
+      this.handleaddcasenote(this.state)
+    }
   
     render() {
       const { date1, subdate1, case_notes, sub_case_notes, first_name, last_name, ssn, sub_first_name, sub_last_name, sub_ssn, red, subred, orange, suborange, yellow, subyellow, green, subgreen, blue, subblue} = this.state
@@ -162,7 +170,7 @@ function CaseNotes() {
 
 
 
-          <Form.Button content='Submit' />
+          <Form.Button content='Submit'/>
           </Form>
           <p></p>
           <p></p>
