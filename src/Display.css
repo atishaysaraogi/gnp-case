@@ -1,3 +1,18 @@
+.container-horiz-right {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  justify-content: end;
+}
+
+.container-horiz-center {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  justify-content: center;
+}
 
 .container-horiz {
     display: flex;
@@ -5,6 +20,24 @@
     padding: 20px;
     background-color: rgb(255, 255, 255);
     justify-content: space-around;
+    outline: 1px solid black;
+  }
+
+  .container-horiz-color {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    justify-content: start
+  }
+
+  .container-horiz-tab {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    justify-content: space-around;
+    width: 100%;
     outline: 1px solid black;
   }
 
