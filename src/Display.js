@@ -42,40 +42,120 @@ function Display() {
             <h3 align = "left">Secondary langauge spoken:</h3>
             <h3 align = "left">Country of Birth:</h3>
       </Tab.Pane> },
-      { menuItem: 'Case Management Day 1', render: () => 
-      <Tab.Pane>Tab 2 Content
 
-      </Tab.Pane> },
-      { menuItem: 'Case Management Day 30', render: () => 
-      <Tab.Pane>Tab 3 Content
-
-      </Tab.Pane> },
-      { menuItem: 'Case Management Day 60', render: () => 
-      <Tab.Pane>Tab 4 Content
-
-      </Tab.Pane> },
-      { menuItem: 'Case Management Day 90', render: () => 
-      <Tab.Pane>Tab 5 Content
-
-      </Tab.Pane> },
       { menuItem: 'Individual Service Plan', render: () => 
-      <Tab.Pane>Tab 5 Content
-
+      <Tab.Pane>
+            <h2>Individual Service Plan</h2>
+            <h3 align = "left">First name:</h3>
+            <h3 align = "left">Last name:</h3>
+            <h3 align = "left">Last 4 of SSN:</h3>
+            <h3 align = "left">Date of Birth:</h3>
+            <h3 align = "left">Date of Birth:</h3>
+            <h3 align = "left">Number of Children:</h3>
+            <h3 align = "left">Date of discharge:</h3>
+            <h3 align = "left">Original Zip Code of Client (before GNP):</h3>
+            <h3 align = "left">New Zip Code of Client (after GNP):</h3>
+        
       </Tab.Pane> },
-      { menuItem: 'Assessment at Intake', render: () => 
-      <Tab.Pane>Tab 5 Content
+      { menuItem: 'Statement of Identified Goals for Self-Sufficiency', render: () => 
+      <Tab.Pane>
+            <h2>Statement of Identified Goals for Self-Sufficiency</h2>
+            <h3 align = "left">Training</h3>
+            <h3 align = "left">Action Item A:</h3>
+            <h3 align = "left">Projected Date of Completion:</h3>
+            <h3 align = "left">Actual Date of Completion:</h3>
+            <h3 align = "left">Action Item B:</h3>
+            <h3 align = "left">Projected Date of Completion:</h3>
+            <h3 align = "left">Actual Date of Completion:</h3>
+
+            <h3 align = "left">Childcare</h3>
+            <h3 align = "left">Action Item A:</h3>
+            <h3 align = "left">Projected Date of Completion:</h3>
+            <h3 align = "left">Actual Date of Completion:</h3>
+            <h3 align = "left">Action Item B:</h3>
+            <h3 align = "left">Projected Date of Completion:</h3>
+            <h3 align = "left">Actual Date of Completion:</h3>
+
+            <h3 align = "left">Employment</h3>
+            <h3 align = "left">Action Item A:</h3>
+            <h3 align = "left">Projected Date of Completion:</h3>
+            <h3 align = "left">Actual Date of Completion:</h3>
+            <h3 align = "left">Action Item B:</h3>
+            <h3 align = "left">Projected Date of Completion:</h3>
+            <h3 align = "left">Actual Date of Completion:</h3>
+
+            <h3 align = "left">Housing</h3>
+            <h3 align = "left">Action Item A:</h3>
+            <h3 align = "left">Projected Date of Completion:</h3>
+            <h3 align = "left">Actual Date of Completion:</h3>
+            <h3 align = "left">Action Item B:</h3>
+            <h3 align = "left">Projected Date of Completion:</h3>
+            <h3 align = "left">Actual Date of Completion:</h3>
+
+            <h3 align = "left">Other</h3>
+            <h3 align = "left">Action Item A:</h3>
+            <h3 align = "left">Projected Date of Completion:</h3>
+            <h3 align = "left">Actual Date of Completion:</h3>
+            <h3 align = "left">Action Item B:</h3>
+            <h3 align = "left">Projected Date of Completion:</h3>
+            <h3 align = "left">Actual Date of Completion:</h3>
+
+            <h3 align = "left">Ethnicity:</h3>
+            <h3 align = "left">Gender:</h3>
+            <h3 align = "left">Sexuality:</h3>
+            <h3 align = "left">Family:</h3>
+            <h3 align = "left">Color categories:</h3>
+ 
 
       </Tab.Pane> },
       { menuItem: 'Housing Plan', render: () => 
+      <Tab.Pane>
+            <h2>Housing Plan</h2>
+            <h3 align = "left">Phase 1 - 30-day Progress:</h3>
+            <h3 align = "left">Phase 1 - 60-day Progress:</h3>
+            <h3 align = "left">Phase 1 - 90-day Progress:</h3>
+            <h3 align = "left">Phase 1 - 120-day Progress:</h3>
+      </Tab.Pane> },
+
+      { menuItem: 'Case Notes', render: () => 
       <Tab.Pane>Tab 5 Content
+            <h2>Case Notes</h2>
+            <h3 align = "left">Notes:</h3>
         
       </Tab.Pane> },
-      { menuItem: 'Case Notes', render: () => 
-      <Tab.Pane>Tab 6 Content
-
-      </Tab.Pane> },
+      
       { menuItem: 'Referral List', render: () => 
-      <Tab.Pane>Tab 6 Content
+      <Tab.Pane>
+        <h2>Referral List</h2>
+        <h3 align = "left">Referral 1:</h3>
+        <h3 align = "left">Date 1:</h3>
+
+        <h3 align = "left">Referral 2:</h3>
+        <h3 align = "left">Date 2:</h3>
+
+        <h3 align = "left">Referral 3:</h3>
+        <h3 align = "left">Date 3:</h3>
+
+        <h3 align = "left">Referral 4:</h3>
+        <h3 align = "left">Date 4:</h3>
+
+        <h3 align = "left">Referral 5:</h3>
+        <h3 align = "left">Date 5:</h3>
+
+        <h3 align = "left">Referral 6:</h3>
+        <h3 align = "left">Date 6:</h3>
+
+        <h3 align = "left">Referral 7:</h3>
+        <h3 align = "left">Date 7:</h3>
+
+        <h3 align = "left">Referral 8:</h3>
+        <h3 align = "left">Date 8:</h3>
+
+        <h3 align = "left">Referral 9:</h3>
+        <h3 align = "left">Date 9:</h3>
+
+        <h3 align = "left">Referral 10:</h3>
+        <h3 align = "left">Date 10:</h3>
 
       </Tab.Pane> },
     ]  
