@@ -89,7 +89,7 @@ function IndServicePlan() {
           <h2>Individual Service Plan</h2>
           <Form onSubmit={this.handleSubmit}>
           <div class="ui grid">
-    <div class="ui form eleven wide column centered">
+    <div class="ui form thirteen wide column centered">
     <div class="one field">
           <Form.Group className="group-1">
 
@@ -191,16 +191,20 @@ function IndServicePlan() {
               value={action_item_a1}
               onChange={this.handleChange}
               />
-              <Form.Field
-              control={TextArea}
+              <label>Projected Date of Completion</label>
+
+              <Form.Input
               placeholder='Projected Date of Completion'
               name='proj_date_a1'
-              type="date"
               value={proj_date_a1}
+              type="date"
               onChange={this.handleChange}
+
+
+
               />
-              <Form.Field
-              control={TextArea}
+              <label>Actual Date of Completion</label>
+              <Form.Input
               placeholder='Actual Date of Completion'
               name='act_date_a1'
               type="date"
@@ -215,7 +219,8 @@ function IndServicePlan() {
               value={action_item_b1}
               onChange={this.handleChange}
               />
-              <Form.Field
+              <label>Projected Date of Completion</label>
+              <Form.Input
               control={TextArea}
               placeholder='Projected Date of Completion'
               name='proj_date_b1'
@@ -223,7 +228,8 @@ function IndServicePlan() {
               value={proj_date_b1}
               onChange={this.handleChange}
               />
-              <Form.Field
+                            <label>Actual Date of Completion</label>
+              <Form.Input
               control={TextArea}
               placeholder='Actual Date of Completion'
               name='act_date_b1'
@@ -243,7 +249,8 @@ function IndServicePlan() {
               value={action_item_a2}
               onChange={this.handleChange}
               />
-              <Form.Field
+              <label>Projected Date of Completion</label>
+              <Form.Input
               control={TextArea}
               placeholder='Projected Date of Completion'
               name='proj_date_a2'
@@ -251,7 +258,8 @@ function IndServicePlan() {
               value={proj_date_a2}
               onChange={this.handleChange}
               />
-              <Form.Field
+                            <label>Actual Date of Completion</label>
+              <Form.Input
               control={TextArea}
               placeholder='Actual Date of Completion'
               name='act_date_a2'
@@ -267,7 +275,8 @@ function IndServicePlan() {
               value={action_item_b2}
               onChange={this.handleChange}
               />
-              <Form.Field
+              <label>Projected Date of Completion</label>
+              <Form.Input
               control={TextArea}
               placeholder='Projected Date of Completion'
               name='proj_date_b2'
@@ -275,7 +284,8 @@ function IndServicePlan() {
               value={proj_date_b2}
               onChange={this.handleChange}
               />
-              <Form.Field
+                            <label>Actual Date of Completion</label>
+              <Form.Input
               control={TextArea}
               placeholder='Actual Date of Completion'
               name='act_date_b2'
@@ -294,7 +304,8 @@ function IndServicePlan() {
               value={action_item_a3}
               onChange={this.handleChange}
               />
-              <Form.Field
+              <label>Projected Date of Completion</label>
+              <Form.Input
               control={TextArea}
               placeholder='Projected Date of Completion'
               name='proj_date_a3'
@@ -302,7 +313,8 @@ function IndServicePlan() {
               value={proj_date_a3}
               onChange={this.handleChange}
               />
-              <Form.Field
+                            <label>Actual Date of Completion</label>
+              <Form.Input
               control={TextArea}
               placeholder='Actual Date of Completion'
               name='act_date_a3'
@@ -318,7 +330,8 @@ function IndServicePlan() {
               value={action_item_b3}
               onChange={this.handleChange}
               />
-              <Form.Field
+              <label>Projected Date of Completion</label>
+              <Form.Input
               control={TextArea}
               placeholder='Projected Date of Completion'
               name='proj_date_b3'
@@ -326,7 +339,8 @@ function IndServicePlan() {
               value={proj_date_b3}
               onChange={this.handleChange}
               />
-              <Form.Field
+                            <label>Actual Date of Completion</label>
+              <Form.Input
               control={TextArea}
               placeholder='Actual Date of Completion'
               name='act_date_b3'
@@ -345,7 +359,8 @@ function IndServicePlan() {
               value={action_item_a4}
               onChange={this.handleChange}
               />
-              <Form.Field
+              <label>Projected Date of Completion</label>
+              <Form.Input
               control={TextArea}
               placeholder='Projected Date of Completion'
               name='proj_date_a4'
@@ -353,7 +368,8 @@ function IndServicePlan() {
               value={proj_date_a4}
               onChange={this.handleChange}
               />
-              <Form.Field
+                            <label>Actual Date of Completion</label>
+              <Form.Input
               control={TextArea}
               placeholder='Actual Date of Completion'
               name='act_date_a4'
@@ -369,7 +385,8 @@ function IndServicePlan() {
               value={action_item_b4}
               onChange={this.handleChange}
               />
-              <Form.Field
+              <label>Projected Date of Completion</label>
+              <Form.Input
               control={TextArea}
               placeholder='Projected Date of Completion'
               name='proj_date_b4'
@@ -377,7 +394,8 @@ function IndServicePlan() {
               value={proj_date_b4}
               onChange={this.handleChange}
               />
-              <Form.Field
+                            <label>Actual Date of Completion</label>
+              <Form.Input
               control={TextArea}
               placeholder='Actual Date of Completion'
               name='act_date_b4'
@@ -397,7 +415,8 @@ function IndServicePlan() {
               value={action_item_a5}
               onChange={this.handleChange}
               />
-              <Form.Field
+              <label>Projected Date of Completion</label>
+              <Form.Input
               control={TextArea}
               placeholder='Projected Date of Completion'
               name='proj_date_a5'
@@ -405,7 +424,8 @@ function IndServicePlan() {
               value={proj_date_a5}
               onChange={this.handleChange}
               />
-              <Form.Field
+                            <label>Actual Date of Completion</label>
+              <Form.Input
               control={TextArea}
               placeholder='Actual Date of Completion'
               name='act_date_a5'
@@ -421,7 +441,8 @@ function IndServicePlan() {
               value={action_item_b5}
               onChange={this.handleChange}
               />
-              <Form.Field
+              <label>Projected Date of Completion</label>
+              <Form.Input
               control={TextArea}
               placeholder='Projected Date of Completion'
               name='proj_date_b5'
@@ -429,7 +450,8 @@ function IndServicePlan() {
               value={proj_date_b5}
               onChange={this.handleChange}
               />
-              <Form.Field
+                            <label>Actual Date of Completion</label>
+              <Form.Input
               control={TextArea}
               placeholder='Actual Date of Completion'
               name='act_date_b5'
@@ -442,7 +464,10 @@ function IndServicePlan() {
         </div>
       </div>
 
+
+
             <h3>Race</h3>
+            <Form.Group className="group-1">
             <label><b>Native American or Alaska Native</b></label>
                 <Form.Radio
                   name='native_am'
@@ -458,6 +483,9 @@ function IndServicePlan() {
                   checked={this.state.native_am == false}
                   onChange={this.handleChange}
                   />
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
 
         <label><b>Asian</b></label>
                 <Form.Radio
@@ -475,6 +503,9 @@ function IndServicePlan() {
                   onChange={this.handleChange}
                   />
 
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+
 <label><b>Black or African American</b></label>
                 <Form.Radio
                   name='black'
@@ -491,6 +522,9 @@ function IndServicePlan() {
                   onChange={this.handleChange}
                   />
 
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+
 <label><b>Native Hawaiian</b></label>
                 <Form.Radio
                   name='hawaii'
@@ -506,6 +540,9 @@ function IndServicePlan() {
                   checked={this.state.hawaii == false}
                   onChange={this.handleChange}
                   />
+                  </Form.Group>
+
+                  <Form.Group className="group-1">
 
 <label><b>Other Pacific Islander</b></label>
                 <Form.Radio
@@ -523,6 +560,9 @@ function IndServicePlan() {
                   onChange={this.handleChange}
                   />
 
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+
 <label><b>White</b></label>
                 <Form.Radio
                   name='white'
@@ -538,6 +578,9 @@ function IndServicePlan() {
                   checked={this.state.white == false}
                   onChange={this.handleChange}
                   />
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
 
 
 <label><b>Other</b></label>
@@ -556,8 +599,12 @@ function IndServicePlan() {
                   onChange={this.handleChange}
                   />
 
+</Form.Group>
+
+
 
 <h3>Ethnicity</h3>
+<Form.Group className="group-1">
             <label><b>Hispanic or Latino</b></label>
                 <Form.Radio
                   name='hispanic'
@@ -574,7 +621,12 @@ function IndServicePlan() {
                   onChange={this.handleChange}
                   />
 
+</Form.Group>
+
+
+
 <h3>Gender</h3>
+<Form.Group className="group-1">
             <label><b>Male</b></label>
                 <Form.Radio
                   name='male'
@@ -590,6 +642,7 @@ function IndServicePlan() {
                   checked={this.state.male == false}
                   onChange={this.handleChange}
                   />
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 
 
 <label><b>Female</b></label>
@@ -607,6 +660,7 @@ function IndServicePlan() {
                   checked={this.state.female == false}
                   onChange={this.handleChange}
                   />
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 
 
 <label><b>Transgender Male</b></label>
@@ -625,6 +679,7 @@ function IndServicePlan() {
                   onChange={this.handleChange}
                   />
 
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 
 <label><b>Transgender Female</b></label>
                 <Form.Radio
@@ -642,6 +697,9 @@ function IndServicePlan() {
                   onChange={this.handleChange}
                   />
 
+</Form.Group>
+<Form.Group className="group-1">
+
 
 <label><b>Non-Binary/Non-Conforming</b></label>
                 <Form.Radio
@@ -658,6 +716,7 @@ function IndServicePlan() {
                   checked={this.state.non_bin == false}
                   onChange={this.handleChange}
                   />
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 
 <label><b>Other</b></label>
                 <Form.Radio
@@ -674,6 +733,7 @@ function IndServicePlan() {
                   checked={this.state.other_gen == false}
                   onChange={this.handleChange}
                   />
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 
 
 <label><b>No Response</b></label>
@@ -692,7 +752,12 @@ function IndServicePlan() {
                   onChange={this.handleChange}
                   />
 
+</Form.Group>
+
                   <h3>Sexuality</h3>
+
+                  <Form.Group className="group-1">
+
 
                   <label><b>Heterosexual</b></label>
                 <Form.Radio
@@ -710,6 +775,7 @@ function IndServicePlan() {
                   onChange={this.handleChange}
                   />
 
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 
 <label><b>Gay</b></label>
                 <Form.Radio
@@ -726,6 +792,7 @@ function IndServicePlan() {
                   checked={this.state.gay == false}
                   onChange={this.handleChange}
                   />
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 
 <label><b>Lesbian</b></label>
                 <Form.Radio
@@ -742,6 +809,7 @@ function IndServicePlan() {
                   checked={this.state.lesbian == false}
                   onChange={this.handleChange}
                   />
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 
 <label><b>Bisexual</b></label>
                 <Form.Radio
@@ -759,6 +827,10 @@ function IndServicePlan() {
                   onChange={this.handleChange}
                   />
 
+</Form.Group>
+
+<Form.Group className="group-1">
+
 <label><b>Asexual</b></label>
                 <Form.Radio
                   name='asexual'
@@ -774,6 +846,7 @@ function IndServicePlan() {
                   checked={this.state.asexual == false}
                   onChange={this.handleChange}
                   />
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 
 
 <label><b>Queer</b></label>
@@ -792,6 +865,7 @@ function IndServicePlan() {
                   onChange={this.handleChange}
                   />
 
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 
 <label><b>Other</b></label>
                 <Form.Radio
@@ -809,7 +883,10 @@ function IndServicePlan() {
                   onChange={this.handleChange}
                   />
 
+</Form.Group>
+
                   <h3>Family Status</h3>
+                  <Form.Group className="group-1">
 
                   <label><b>Single Woman</b></label>
                 <Form.Radio
@@ -826,6 +903,7 @@ function IndServicePlan() {
                   checked={this.state.single_woman == false}
                   onChange={this.handleChange}
                   />
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 
 <label><b>Family</b></label>
                 <Form.Radio
@@ -843,14 +921,15 @@ function IndServicePlan() {
                   onChange={this.handleChange}
                   />
 
+</Form.Group>
 
 
 
 
-<h3>Color Categories</h3>
+<h3>Color Coding</h3>
 
-
-              <label><b>Red?</b></label>
+<Form.Group className="group-1">
+<label><b>Red?</b></label>
                 <Form.Radio
                   name='red'
                   label='Yes'
@@ -865,6 +944,8 @@ function IndServicePlan() {
                   checked={this.state.red == false}
                   onChange={this.handleChange}
                   />
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 
 <label><b>Orange?</b></label>
                 <Form.Radio
@@ -882,6 +963,8 @@ function IndServicePlan() {
                   onChange={this.handleChange}
                   />
 
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
 <label><b>Yellow?</b></label>
                 <Form.Radio
                   name='yellow'
@@ -897,7 +980,8 @@ function IndServicePlan() {
                   checked={this.state.yellow == false}
                   onChange={this.handleChange}
                   />
-
+</Form.Group>
+<Form.Group className="group-1">
 <label><b>Green?</b></label>
                 <Form.Radio
                   name='green'
@@ -914,6 +998,8 @@ function IndServicePlan() {
                   onChange={this.handleChange}
                   />
 
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
 <label><b>Blue?</b></label>
                 <Form.Radio
                   name='blue'
@@ -929,6 +1015,7 @@ function IndServicePlan() {
                   checked={this.state.blue == false}
                   onChange={this.handleChange}
                   />
+</Form.Group>
 
 
               <Form.Button content='Submit' />

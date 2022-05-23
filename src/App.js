@@ -18,9 +18,13 @@ function App() {
   return (
     <div>
       <div class="header">
-      <img src={logo} width="140"/>
+      <img src={logo} class='logo' width="115"/>
 
-      <a class="logo" href='/'><i class="home icon"></i></a>
+      <a class="home" href='/'><i class="home icon"></i></a>
+
+
+      <a href='metrics' class="metric_css"><Button size='mini' color='blue' path=''> Metrics Page </Button></a>
+      <a href='' class="logout_css"><Button size='mini' color='blue' path=''> Logout </Button></a>
 
     </div>
       <Routes>

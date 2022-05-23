@@ -318,8 +318,9 @@ function ReferralList() {
 
 
 
-
-              <label><b>Red?</b></label>
+              <h3>Color Coding</h3>
+              <Form.Group className="group-1">
+<label><b>Red?</b></label>
                 <Form.Radio
                   name='red'
                   label='Yes'
@@ -334,6 +335,8 @@ function ReferralList() {
                   checked={this.state.red == false}
                   onChange={this.handleChange}
                   />
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 
 <label><b>Orange?</b></label>
                 <Form.Radio
@@ -351,6 +354,8 @@ function ReferralList() {
                   onChange={this.handleChange}
                   />
 
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
 <label><b>Yellow?</b></label>
                 <Form.Radio
                   name='yellow'
@@ -366,7 +371,8 @@ function ReferralList() {
                   checked={this.state.yellow == false}
                   onChange={this.handleChange}
                   />
-
+</Form.Group>
+<Form.Group className="group-1">
 <label><b>Green?</b></label>
                 <Form.Radio
                   name='green'
@@ -383,6 +389,8 @@ function ReferralList() {
                   onChange={this.handleChange}
                   />
 
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
 <label><b>Blue?</b></label>
                 <Form.Radio
                   name='blue'
@@ -398,6 +406,7 @@ function ReferralList() {
                   checked={this.state.blue == false}
                   onChange={this.handleChange}
                   />
+</Form.Group>
 
 
           <Form.Button content='Submit' />

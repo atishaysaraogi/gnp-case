@@ -104,6 +104,9 @@ function CaseNotes() {
 <p></p>
 <p></p>
 
+<h3>Color Coding</h3>
+
+<Form.Group className="group-1">
 <label><b>Red?</b></label>
                 <Form.Radio
                   name='red'
@@ -119,6 +122,8 @@ function CaseNotes() {
                   checked={this.state.red == false}
                   onChange={this.handleChange}
                   />
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 
 <label><b>Orange?</b></label>
                 <Form.Radio
@@ -136,6 +141,8 @@ function CaseNotes() {
                   onChange={this.handleChange}
                   />
 
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
 <label><b>Yellow?</b></label>
                 <Form.Radio
                   name='yellow'
@@ -151,7 +158,8 @@ function CaseNotes() {
                   checked={this.state.yellow == false}
                   onChange={this.handleChange}
                   />
-
+</Form.Group>
+<Form.Group className="group-1">
 <label><b>Green?</b></label>
                 <Form.Radio
                   name='green'
@@ -168,6 +176,8 @@ function CaseNotes() {
                   onChange={this.handleChange}
                   />
 
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
 <label><b>Blue?</b></label>
                 <Form.Radio
                   name='blue'
@@ -183,7 +193,7 @@ function CaseNotes() {
                   checked={this.state.blue == false}
                   onChange={this.handleChange}
                   />
-
+</Form.Group>
 
 
           <Form.Button content='Submit' />

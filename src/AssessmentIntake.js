@@ -70,6 +70,7 @@ function AssessmentIntake() {
                 errorLabel={ <label color="red" pointing/> }
               />
               </Form.Group>
+              <Form.Group className="group-1">
                 <label><b>1) Do you have a high school diploma or GED?</b></label>
                 <Form.Radio
                   label='Yes'
@@ -85,7 +86,8 @@ function AssessmentIntake() {
                   checked={this.state.dip == false}
                   onChange={this.handleChange}
                 />
-              <p></p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
                 <label><b>2) Do you have a job?</b></label>
                 <Form.Radio
                   name='job'
@@ -102,6 +104,7 @@ function AssessmentIntake() {
                   onChange={this.handleChange}
                 />
               <p></p>
+              </Form.Group>
               <div class="ui grid">
     <div class="ui form ten wide column centered">
     <div class="one field">
@@ -189,6 +192,7 @@ function AssessmentIntake() {
                 errorLabel={ errorLabel }
               />
               </Form.Group>
+              <Form.Group className="group-1">
               <label><b>3) If you don't have a job, are you enrolled in a training proram?</b></label>
                 <Form.Radio
                   name='tr'
@@ -205,6 +209,7 @@ function AssessmentIntake() {
                   onChange={this.handleChange}
                 />
               <p></p>
+              </Form.Group>
               <div class="ui grid">
     <div class="ui form ten wide column centered">
     <div class="one field">
@@ -225,6 +230,10 @@ function AssessmentIntake() {
         </div>
       </div>
            <p></p>
+           <p></p>
+
+
+           <Form.Group className="group-1">
               <label><b>4) Do you have any job skills?</b></label>
                 <Form.Radio
                   name='sk'
@@ -242,6 +251,7 @@ function AssessmentIntake() {
                   onChange={this.handleChange}
                 />
               <p></p>
+              </Form.Group>
               <div class="ui grid">
     <div class="ui form ten wide column centered">
     <div class="one field">
@@ -265,6 +275,9 @@ function AssessmentIntake() {
   
 </p>
 
+<h3>Color Coding</h3>
+
+<Form.Group className="group-1">
 <label><b>Red?</b></label>
                 <Form.Radio
                   name='red'
@@ -280,6 +293,8 @@ function AssessmentIntake() {
                   checked={this.state.red == false}
                   onChange={this.handleChange}
                   />
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 
 <label><b>Orange?</b></label>
                 <Form.Radio
@@ -297,6 +312,8 @@ function AssessmentIntake() {
                   onChange={this.handleChange}
                   />
 
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
 <label><b>Yellow?</b></label>
                 <Form.Radio
                   name='yellow'
@@ -312,7 +329,8 @@ function AssessmentIntake() {
                   checked={this.state.yellow == false}
                   onChange={this.handleChange}
                   />
-
+</Form.Group>
+<Form.Group className="group-1">
 <label><b>Green?</b></label>
                 <Form.Radio
                   name='green'
@@ -329,6 +347,8 @@ function AssessmentIntake() {
                   onChange={this.handleChange}
                   />
 
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
 <label><b>Blue?</b></label>
                 <Form.Radio
                   name='blue'
@@ -344,6 +364,7 @@ function AssessmentIntake() {
                   checked={this.state.blue == false}
                   onChange={this.handleChange}
                   />
+</Form.Group>
 
 
 
