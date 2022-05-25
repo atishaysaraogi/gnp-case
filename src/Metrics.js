@@ -70,6 +70,8 @@ const race = [
   { name: 'Other Multi-Racial', value: 10, fill:"#d0ed57"}
 ];
 
+const ethnicity = [{name:'Hispanic or Latino', value: 30}]
+
 const gender = [
   { name: 'Woman', value: 10, fill: "#005f73"},
   { name: 'Man', value: 30, fill:"#0a9396" },
