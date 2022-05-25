@@ -21,12 +21,12 @@
 }
 
 .timeRange{
-  position:relative;
+  position:absolute;
   font-size: 15px;
   width: 150px;
   display: inline-block;
-  left: 490px;
-  top: 0px;
+  right: 10px;
+  top: 10px;
 }
 
 #time{
