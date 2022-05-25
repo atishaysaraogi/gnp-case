@@ -2,11 +2,8 @@ import gnp from './GNP_Logo_RGB.png';
 import './App.css';
 import React, {Component} from 'react';
 import { render } from "react-dom";
-import { Button, Search, Dropdown, Grid, Segment, Tab} from 'semantic-ui-react';
+import { Button, Search, Dropdown, Grid, Segment} from 'semantic-ui-react';
 import Bar from './Bar.js';
-import Data from "./data.json"
-import DataSSN from "./data_ssn.json"
-import DataAge from "./data_age.json"
 
 
 const options = [
@@ -14,45 +11,6 @@ const options = [
   {key: 2, value: 2, text: "Bob"}, 
   {key: 3, value: 3, text: "Claire"}
  ];
-
- const panes = [
-  { menuItem: 'Search by Name', render: () => <Tab.Pane>
-    <Dropdown
-                button
-                className='icon'
-                fluid
-                labeled
-                icon='search'
-                options={Data}
-                search
-                text='Search'
-              />
-  </Tab.Pane> },
-  { menuItem: 'Search by SSN', render: () => <Tab.Pane>
-    <Dropdown
-                button
-                className='icon'
-                fluid
-                labeled
-                icon='search'
-                options={DataSSN}
-                search
-                text='Search'
-              />
-  </Tab.Pane> },
-  { menuItem: 'Search by Age', render: () => <Tab.Pane>
-    <Dropdown
-                button
-                className='icon'
-                fluid
-                labeled
-                icon='search'
-                options={DataAge}
-                search
-                text='Search'
-              />
-  </Tab.Pane> },
-]
 
 function SearchBarPage() {
   return (
@@ -75,41 +33,28 @@ function SearchBarPage() {
             <Grid.Column>
             </Grid.Column>
 
-            <Grid.Column width={9}>
+            <Grid.Column width={3}>
               {/* <Search size='big' /> */}
-              {/* <Bar /> */}
-
-              {/* <Dropdown
-                button
-                className='icon'
-                fluid
-                labeled
-                icon='search'
-                options={Data}
-                search
-                text='Search'
-              /> */}
-
-              <Tab panes={panes} />
-
-
-
-
-
+              <Bar />
             </Grid.Column>
 
-
-            {/* <Grid.Column width={2}>
-              <Dropdown icon='filter' text='search by'>
+            <Grid.Column width={1}>
+              <Dropdown icon='filter' text='sort by'>
                 <Dropdown.Menu>
-                <Dropdown.Item text='Name' />
-                <Dropdown.Item text='Age' />
-                <Dropdown.Item text='Intake Period' />
-                <Dropdown.Item text='SSN' description='last 4 digits' />
+                <Dropdown.Item text='First Name' description='A - Z' />
+                <Dropdown.Item text='First Name' description='Z - A' />
+                <Dropdown.Item text='Last Name' description='A - Z' />
+                <Dropdown.Item text='Last Name' description='Z - A' />
+                <Dropdown.Item text='Age' description='youngest first' />
+                <Dropdown.Item text='Age' description='oldest first' />
                 </Dropdown.Menu>
               </Dropdown>
-            </Grid.Column> */}
+            </Grid.Column>
 
+            <Grid.Column width={1}>
+              <Button size='mini'> search </Button>
+              
+            </Grid.Column>
 
             <Grid.Column>
             </Grid.Column>
@@ -117,17 +62,14 @@ function SearchBarPage() {
 
           <h1>  </h1>   
 
-          {/* <Dropdown
+          <Dropdown
             placeholder='Search'
             fluid
             multiple
             search
             selection
             options={options}
-          /> */}
-
-
-          
+          />
           
 
 

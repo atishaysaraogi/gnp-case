@@ -17,7 +17,7 @@ function ReferralList() {
 
   class FormExampleCaptureValues extends Component {
 
-    state = { date0: '', entry: '', discharge: '', subname1: '', subdate0: '', subentry: '', subdischarge: '',
+    state = { date0: '', entry: '', discharge: '', subname1: '', subdate1: '', subentry: '', subdischarge: '',
              date1: '', subdate1: '', date2: '', subdate2: '', date3: '', subdate3: '', date4: '', subdate4: '', date5: '', subdate5: '',
              date6: '', subdate6: '', date7: '', subdate7: '', date8: '', subdate8: '', date9: '', subdate9: '', date10: '', subdate10: '', 
             ref1: '', subref1: '', ref2: '', subref2: '', ref3: '', subref3: '', ref4: '', subref4: '', ref5: '', subref5: '', 

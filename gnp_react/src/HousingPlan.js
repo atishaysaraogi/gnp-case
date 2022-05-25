@@ -17,7 +17,7 @@ function HousingPlan() {
 
   class FormExampleCaptureValues extends Component {
 
-    state = {  act_30: '', act_60: '', act_90: '', act_120: '', sub_act_30: '', sub_act_60: '', sub_act_90: '', sub_act_120: '', first_name: '', sub_first_name: '', last_name: '', sub_last_name: '', ssn: '', sub_ssn: ''}
+    state = {  act_30: '', act_60: '', act_90: '', act_120: '', sub_act_30: '', sub_act_60: '', sub_act_90: '', sub_act_120: '', first_name: '', sub_first_name: '', last_name: '', sub_late_name: '', ssn: '', sub_ssn: ''}
 
   
     handleChange = (e, { name, value }) => this.setState({ [name]: value })
