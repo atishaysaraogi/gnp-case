@@ -166,7 +166,7 @@ function Metrics() {
     <div className="App">
       
       <header className="App-header"> 
-        <div>
+        <div className = "sum">
           <h1 className = "Summary"> Summary</h1> 
 
           <div className = "range">
