@@ -58,6 +58,23 @@ function SearchBarPage() {
   return (
     <div className="App">
 
+        <h1>  </h1> 
+    
+      <h1>Intake Forms</h1>
+
+       <a href='casenotes'><Button size='medium' color='blue' path=''> Case Notes </Button></a>
+       <a href='indserviceplan'><Button size='medium' color='blue' path=''> Individual Service Plan </Button></a>
+       <a href='housingplan'><Button size='medium' color='blue' path=''> Housing Plan </Button></a>
+       <a href='assessmentintake'><Button size='medium' color='blue' path=''> AssessmentIntake </Button></a>
+       <a href='referrallist'><Button size='medium' color='blue' path=''> Referral List </Button></a>
+
+        <h2>  </h2>
+
+        <h2>  </h2>
+
+
+
+
           <Grid columns='equal'>
             <Grid.Column>
             </Grid.Column>
@@ -124,4 +141,3 @@ function SearchBarPage() {
 
 
 export default SearchBarPage;
-
