@@ -70,6 +70,7 @@ function AssessmentIntake() {
                 errorLabel={ <label color="red" pointing/> }
               />
               </Form.Group>
+              <Form.Group className="group-1">
                 <label><b>1) Do you have a high school diploma or GED?</b></label>
                 <Form.Radio
                   label='Yes'
@@ -85,7 +86,8 @@ function AssessmentIntake() {
                   checked={this.state.dip == false}
                   onChange={this.handleChange}
                 />
-              <p></p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
                 <label><b>2) Do you have a job?</b></label>
                 <Form.Radio
                   name='job'
@@ -102,6 +104,10 @@ function AssessmentIntake() {
                   onChange={this.handleChange}
                 />
               <p></p>
+              </Form.Group>
+              <div class="ui grid">
+    <div class="ui form ten wide column centered">
+    <div class="one field">
               <label>If you do have a job:</label>
               <Form.Input
                 placeholder='Job Description'
@@ -121,7 +127,15 @@ function AssessmentIntake() {
                 value={emp_phone}
                 onChange={this.handleChange}
               />
+                            </div>
+        </div>
+      </div>
+      <p>
+      </p>
+      <p>
+      </p>
               <Form.Group className="group-1">
+
               <label>Number of years worked there</label>
             <Form.Input
                 placeholder='# years worked there'
@@ -143,6 +157,8 @@ function AssessmentIntake() {
                 validationErrors={{ isNumeric: 'Must be a number' }}
                 errorLabel={ errorLabel }
               />
+                            </Form.Group>
+                            <Form.Group className="group-1">
               <label>Hourly wage</label>
             <Form.Input
                 placeholder='Hourly wage'
@@ -153,8 +169,8 @@ function AssessmentIntake() {
                 validationErrors={{ isNumeric: 'Must be a number' }}
                 errorLabel={ errorLabel }
               />
-              </Form.Group>
-              <Form.Group className="group-1">
+
+
               <label>Bi-weekly wage</label>
             <Form.Input
                 placeholder='Bi-weekly wage'
@@ -176,6 +192,7 @@ function AssessmentIntake() {
                 errorLabel={ errorLabel }
               />
               </Form.Group>
+              <Form.Group className="group-1">
               <label><b>3) If you don't have a job, are you enrolled in a training proram?</b></label>
                 <Form.Radio
                   name='tr'
@@ -192,6 +209,10 @@ function AssessmentIntake() {
                   onChange={this.handleChange}
                 />
               <p></p>
+              </Form.Group>
+              <div class="ui grid">
+    <div class="ui form ten wide column centered">
+    <div class="one field">
               <label>If you are enrolled in job training:</label>
               <Form.Input
                 placeholder='Training Program'
@@ -205,7 +226,14 @@ function AssessmentIntake() {
                 value={tr_loc}
                 onChange={this.handleChange}
               />
+              </div>
+        </div>
+      </div>
            <p></p>
+           <p></p>
+
+
+           <Form.Group className="group-1">
               <label><b>4) Do you have any job skills?</b></label>
                 <Form.Radio
                   name='sk'
@@ -223,6 +251,10 @@ function AssessmentIntake() {
                   onChange={this.handleChange}
                 />
               <p></p>
+              </Form.Group>
+              <div class="ui grid">
+    <div class="ui form ten wide column centered">
+    <div class="one field">
               <label>If so, what are your job skills?</label>
               <Form.Field
               control={TextArea}
@@ -231,101 +263,24 @@ function AssessmentIntake() {
               value={skills}
               onChange={this.handleChange}
               />
+                            </div>
+        </div>
+      </div>
 
+      <p>
 
+      </p>
 
-<label><b>Red?</b></label>
-                <Form.Radio
-                  name='red'
-                  label='Yes'
-                  value={true}
-                  checked={this.state.red == true}
-                  onChange={this.handleChange}
-                />
-                <Form.Radio
-                  name='red'
-                  label='No'
-                  value={false}
-                  checked={this.state.red == false}
-                  onChange={this.handleChange}
-                  />
-
-<label><b>Orange?</b></label>
-                <Form.Radio
-                  name='orange'
-                  label='Yes'
-                  value={true}
-                  checked={this.state.orange == true}
-                  onChange={this.handleChange}
-                />
-                <Form.Radio
-                  name='orange'
-                  label='No'
-                  value={false}
-                  checked={this.state.orange == false}
-                  onChange={this.handleChange}
-                  />
-
-<label><b>Yellow?</b></label>
-                <Form.Radio
-                  name='yellow'
-                  label='Yes'
-                  value={true}
-                  checked={this.state.yellow == true}
-                  onChange={this.handleChange}
-                />
-                <Form.Radio
-                  name='yellow'
-                  label='No'
-                  value={false}
-                  checked={this.state.yellow == false}
-                  onChange={this.handleChange}
-                  />
-
-<label><b>Green?</b></label>
-                <Form.Radio
-                  name='green'
-                  label='Yes'
-                  value={true}
-                  checked={this.state.green == true}
-                  onChange={this.handleChange}
-                />
-                <Form.Radio
-                  name='green'
-                  label='No'
-                  value={false}
-                  checked={this.state.green == false}
-                  onChange={this.handleChange}
-                  />
-
-<label><b>Blue?</b></label>
-                <Form.Radio
-                  name='blue'
-                  label='Yes'
-                  value={true}
-                  checked={this.state.blue == true}
-                  onChange={this.handleChange}
-                />
-                <Form.Radio
-                  name='blue'
-                  label='No'
-                  value={false}
-                  checked={this.state.blue == false}
-                  onChange={this.handleChange}
-                  />
+<p>
+  
+</p>
 
 
 
               <Form.Button content='Submit' />
               </Form>
           <p></p>
-          <strong>onChange:</strong>
-          <pre>{JSON.stringify({ dip, job, job_desc, emp_add, emp_phone, years_worked, mon_worked, hour_wage, bi_wage, mon_wage, tr, tr_pro, tr_loc, sk, skills, first_name, last_name, ssn, red, orange, yellow, green, blue
-            }, null, 2)}</pre>
-                    <strong>onSubmit:</strong>
-                    <pre>{JSON.stringify({ sub_dip, sub_job, sub_job_desc, sub_emp_add, sub_emp_phone, sub_years_worked, sub_mon_worked, sub_hour_wage, sub_bi_wage, sub_mon_wage, 
-                                            sub_tr, sub_tr_pro, sub_tr_loc, sub_sk, sub_skills, sub_first_name, sub_last_name, sub_ssn, subred, suborange, subyellow, subgreen, subblue
-            }, null, 2)}</pre>
+     
         </div>
       )
     }

@@ -60,8 +60,14 @@ function CaseNotes() {
                 validationErrors={{ isNumeric: 'Must be a number' }}
                 errorLabel={ <label color="red" pointing/> }
               />
+
+
               </Form.Group>
               <h3>Today's Date</h3>
+
+              <div class="ui grid">
+    <div class="ui form ten wide column centered">
+    <div class="one field">
               <Form.Input
                 placeholder='Date'
                 name='date1'
@@ -69,108 +75,41 @@ function CaseNotes() {
                 type="date"
                 onChange={this.handleChange}
               />
+
+
+</div>
+        </div>
+      </div>
+
               <h3>Case Notes</h3>
+
+              <div class="ui grid">
+    <div class="ui form ten wide column centered">
+    <div class="one field">
+
             <Form.Field
               control={TextArea}
               placeholder='Case Notes'
               name='case_notes'
               value={case_notes}
               onChange={this.handleChange}
+              width="200"
               />
 
+</div>
+        </div>
+      </div>
 
 
-<label><b>Red?</b></label>
-                <Form.Radio
-                  name='red'
-                  label='Yes'
-                  value={true}
-                  checked={this.state.red == true}
-                  onChange={this.handleChange}
-                />
-                <Form.Radio
-                  name='red'
-                  label='No'
-                  value={false}
-                  checked={this.state.red == false}
-                  onChange={this.handleChange}
-                  />
-
-<label><b>Orange?</b></label>
-                <Form.Radio
-                  name='orange'
-                  label='Yes'
-                  value={true}
-                  checked={this.state.orange == true}
-                  onChange={this.handleChange}
-                />
-                <Form.Radio
-                  name='orange'
-                  label='No'
-                  value={false}
-                  checked={this.state.orange == false}
-                  onChange={this.handleChange}
-                  />
-
-<label><b>Yellow?</b></label>
-                <Form.Radio
-                  name='yellow'
-                  label='Yes'
-                  value={true}
-                  checked={this.state.yellow == true}
-                  onChange={this.handleChange}
-                />
-                <Form.Radio
-                  name='yellow'
-                  label='No'
-                  value={false}
-                  checked={this.state.yellow == false}
-                  onChange={this.handleChange}
-                  />
-
-<label><b>Green?</b></label>
-                <Form.Radio
-                  name='green'
-                  label='Yes'
-                  value={true}
-                  checked={this.state.green == true}
-                  onChange={this.handleChange}
-                />
-                <Form.Radio
-                  name='green'
-                  label='No'
-                  value={false}
-                  checked={this.state.green == false}
-                  onChange={this.handleChange}
-                  />
-
-<label><b>Blue?</b></label>
-                <Form.Radio
-                  name='blue'
-                  label='Yes'
-                  value={true}
-                  checked={this.state.blue == true}
-                  onChange={this.handleChange}
-                />
-                <Form.Radio
-                  name='blue'
-                  label='No'
-                  value={false}
-                  checked={this.state.blue == false}
-                  onChange={this.handleChange}
-                  />
-
+<p></p>
+<p></p>
 
 
           <Form.Button content='Submit' />
           </Form>
           <p></p>
           <p></p>
-          <strong>onChange:</strong>
-          <pre>{JSON.stringify({ date1, case_notes, first_name, last_name, ssn, red, orange, yellow, green, blue }, null, 2)}</pre>
-          <strong>onSubmit:</strong>
-          <pre>{JSON.stringify({ subdate1, sub_case_notes, sub_first_name, sub_last_name, sub_ssn, subred, suborange, subyellow, subgreen, subblue }, null, 2)}</pre>
-        </div>
+      </div>
       )
     }
   }
