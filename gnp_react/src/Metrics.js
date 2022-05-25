@@ -168,15 +168,19 @@ function Metrics() {
         <div>
           <h1 className = "Summary"> Summary</h1> 
 
-          <div className = "timeRange">
-              <Dropdown
-                placeholder='Select'
-                fluid
-                selection
-                options={range}/>
-          </div>
-  
-          <div id='time'> By Time: </div>
+          <div className = "range">
+            <div id='time'> By Time: </div>
+
+            <div className = "timeRange">
+                  <Dropdown
+                    placeholder='Select'
+                    fluid
+                    selection
+                    options={range}/>
+            </div>
+
+            </div>
+
         </div>
       </header>
       

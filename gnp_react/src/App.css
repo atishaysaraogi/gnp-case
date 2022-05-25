@@ -29,26 +29,31 @@
 }
 
 .Summary{
+  position:relative;
   display: inline-block;
   font-size: 35px;
+  text-align:center;
+  left:100px;
+}
+
+.range{
+  position:relative;
+  display: inline-block;
+  left:430px;
 }
 
 .timeRange{
-  position:relative;
+  position: relative;
   font-size: 15px;
   width: 150px;
   display: inline-block;
-  left: 490px;
-  top: 0px;
 }
 
 #time{
-  position:absolute;
+  position:relative;
   display: inline-block;
   font-size: 20px;
-  right: 165px;
-  top: 17px;
-}
+} 
 
 .top{
   position:relative;
@@ -84,8 +89,6 @@
   position: absolute;
   display:inline-block;
   width:100px;
-  /* top: 110px;
-  left:740px; */
 }
 
 .age{
@@ -102,7 +105,6 @@
 
 .upMid{
   position:relative;
-  /* bottom:420px; */
 }
 
 .gen{
@@ -116,10 +118,12 @@
 }
 
 .gender-sexuality{
-  position:absolute;
+  position:relative;
   display: inline-block;
+  margin-left:auto;
+  margin-right:auto;
   top:430px;
-  left:210px;
+  right:430px;
 }
 
 .genPie{
@@ -195,6 +199,10 @@
 #races{
   left: 340px;
   top:20px;
+}
+
+.exitedClients{
+  position:relative;
 }
 
 .map{
