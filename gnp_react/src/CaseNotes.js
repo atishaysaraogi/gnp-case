@@ -12,18 +12,18 @@ import {
   Select,
   TextArea
 } from 'formsy-semantic-ui-react'
-import casenoteservice from './services/casenotedb'
+import addCaseNote from './services/casenotedb'
 
 function CaseNotes() {
 
   class FormExampleCaptureValues extends Component {
 
     handleaddcasenote = newcasenote => {
-      casenoteservice
-        .addCaseNote({
+      addCaseNote({
           activity: newcasenote
-        })
+      })
     }
+    
     state = { date1: '', case_notes: '', subname1: '', subdate1: '', sub_case_notes: '', first_name: '', sub_first_name: '', last_name: '', sub_late_name: '', ssn: '', sub_ssn: ''}
   
     handleChange = (e, { name, value }) => this.setState({ [name]: value })

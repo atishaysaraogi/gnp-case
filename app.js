@@ -13,10 +13,12 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.post('/api/casenote', (req, res) => {
-    services.addActivityToDB(req, res);
+    services.addCaseNoteToDB(req, res);
   });
 
-
+app.get('/api/casenote', (req,res)=>{
+  services.getCaseNoteFromDB(req, res);
+})
 app.listen(PORT, () => { // start server and listen on specified port
   console.log(`App is running on ${PORT}`) // confirm server is running and log port to the console
 }) 

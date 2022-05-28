@@ -15,4 +15,4 @@ const addCaseNote = activity => {
     })
   }
 
-export default {addCaseNote}
+exports.addCaseNote = addCaseNote
