@@ -163,7 +163,9 @@ function Metrics() {
     <div className="App">
       
       <header className="App-header"> 
+        <div>
           <h1 className = "Summary"> Summary</h1> 
+
           <div className = "timeRange">
               <Dropdown
                 placeholder='Select'
@@ -171,6 +173,9 @@ function Metrics() {
                 selection
                 options={range}/>
           </div>
+  
+          <div id='time'> By Time: </div>
+        </div>
       </header>
       
 
