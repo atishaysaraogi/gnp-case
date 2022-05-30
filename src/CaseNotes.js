@@ -1,7 +1,6 @@
 import 'semantic-ui-css/semantic.min.css'
 import logo from './logo.svg';
 import './App.css';
-import './Intake.css';
 import { useState, useEffect, Component } from "react";
 import {
   Button,
