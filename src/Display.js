@@ -190,15 +190,15 @@ function Display() {
 
 
   return (
-    <div className="App">
+    <div class="App">
       <div class = "container-horiz-right">  
         <div class = "container-horiz-center">
           <h1>{info.firstname} {info.lastname} </h1>
         </div>
-        <Button>Edit</Button>
+         {/*<Button>Edit</Button>*/}
       </div>
       <div class="container-horiz">
-        <Image src="//style.anu.edu.au/_anu/4/images/placeholders/person.png" alt="no photo available" class="w100px" />
+        {/*<Image src="//style.anu.edu.au/_anu/4/images/placeholders/person.png" alt="no photo available" class="w100px" />*/}
         <div class = "container-vert" align = "left">
           <h2>Date of birth: {info.dob}</h2>
           <h2>Number of children: {info.num_children}</h2>

@@ -28,7 +28,7 @@ function App() {
 
     </div>
       <Routes>
-        <Route path="/" element={< SearchBarPage/>} />
+        <Route path="/" element={<div>< SearchBarPage/> <div> <Display /> </div> </div>} />
         <Route path="casenotes" element={< CaseNotes/>} />
         <Route path="referrallist" element={< ReferralList/>} />
         <Route path="assessmentintake" element={< AssessmentIntake/>} />

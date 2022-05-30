@@ -7,6 +7,14 @@
   pointer-events: none;
 }
 
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -21,25 +29,21 @@
   background-color: #282c34;
   min-height: 60px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding: 10px;
 }
 
 .Summary{
-  display: inline-block;
-  font-size: 35px;
+  font-size: 30px;
 }
 
 .timeRange{
-  position:absolute;
   font-size: 15px;
   width: 150px;
-  display: inline-block;
-  right: 10px;
-  top: 10px;
 }
 
 #time{
@@ -49,6 +53,7 @@
   right: 165px;
   top: 17px;
 }
+
 
 .top{
   position:relative;
