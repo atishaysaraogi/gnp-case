@@ -175,8 +175,6 @@ function Metrics() {
                 selection
                 options={range}/>
           </div>
-  
-          <div id='time'> By Time: </div>
         </div>
       </header>
       

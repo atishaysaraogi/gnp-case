@@ -42,7 +42,7 @@
   }
 
 
-
+/*
   .form {
     display: flex;
     padding: 20px;
@@ -57,7 +57,7 @@
     background-color: rgb(255, 255, 255);
 
   }
-
+*/
   .rp-container {
     display: flex;
     flex-direction: row;
